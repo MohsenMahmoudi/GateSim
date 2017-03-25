@@ -1,0 +1,463 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="Charting Classes">
+    <Position X="11.281" Y="6.99" Height="0.333" Width="1.117" />
+  </Comment>
+  <Comment CommentText="Drag/Drop Classes">
+    <Position X="19.25" Y="6.75" Height="0.333" Width="1.283" />
+  </Comment>
+  <Comment CommentText="Undo/Redo Support">
+    <Position X="29.115" Y="6.542" Height="0.333" Width="1.325" />
+  </Comment>
+  <Comment CommentText="User Interface Classes">
+    <Position X="31.75" Y="0.75" Height="0.375" Width="1.513" />
+  </Comment>
+  <Comment CommentText="Misc. Classes">
+    <Position X="37.365" Y="0.865" Height="0.396" Width="1.221" />
+  </Comment>
+  <Class Name="GatesWpf.App" Collapsed="true">
+    <Position X="29.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GatesWpf.CircuitXML" Collapsed="true">
+    <Position X="37.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BABAgIAAAAAAABAAIEAiAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CircuitXML.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GatesWpf.ConnectedWire" Collapsed="true">
+    <Position X="3.5" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAIAAAAAAAAIAAAAAABAAoAAAAAACAAAAABQAAAAIAA=</HashCode>
+      <FileName>ConnectedWire.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GatesWpf.EventDispatcher" Collapsed="true">
+    <Position X="37.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>EventDispatcher.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GatesWpf.Gate" Collapsed="true">
+    <Position X="17.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CCAAAAAEAFAQABAQCAAAAIQAAAAAAAAAAgAAAAIAAgI=</HashCode>
+      <FileName>Gate.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="GatesWpf.GateCanvas" Collapsed="true">
+    <Position X="28.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gQBmAICAACgCAFqaHASGDAAIQRQARICeEGACktAEAoA=</HashCode>
+      <FileName>GateCanvas.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GatesWpf.GateLocation" Collapsed="true">
+    <Position X="30.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgAABAAAA=</HashCode>
+      <FileName>GateLocation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GatesWpf.GateSelector" Collapsed="true">
+    <Position X="32" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAEAAADQAAAEAAAAAgAQAAAAECAAEgAIBAA=</HashCode>
+      <FileName>GateSelector.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GatesWpf.ExpanderHeightConverter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="28.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GateSelector.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="GatesWpf.ICBuilder" Collapsed="true">
+    <Position X="37.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAIAAAAAAIAABAAwAACAAEAAAAAAQAA=</HashCode>
+      <FileName>ICBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GatesWpf.ICList" Collapsed="true">
+    <Position X="37.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAgBIA=</HashCode>
+      <FileName>ICList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GatesWpf.InfoLine" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="30.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAkAAQAAAAIAAAgAAAAEAhAAABEAAAAAAAACgAAA=</HashCode>
+      <FileName>InfoLine.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="GatesWpf.SaveClose" Collapsed="true">
+    <Position X="30.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQAEAAAAAAABAAACAAAAAAAAI=</HashCode>
+      <FileName>SaveClose.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GatesWpf.ShadowBox" Collapsed="true">
+    <Position X="28.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ShadowBox.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GatesWpf.Terminal" Collapsed="true">
+    <Position X="30.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAgAAABEAAAAAgAAAAAAA=</HashCode>
+      <FileName>Terminal.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GatesWpf.TopologicalSort" Collapsed="true">
+    <Position X="37.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAQAAAAQAAAAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>TopologicalSort.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GatesWpf.Window1" Collapsed="true">
+    <Position X="28.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>hKxAEAAwQAAAEgRAACACDUQgcFGIBBEgQBIAQEoQoRA=</HashCode>
+      <FileName>Window1.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GatesWpf.Wire" Collapsed="true">
+    <Position X="3.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAkAAQAABAAAACAAAAAAAAAgAAAAEAEBIAgAAgAAAA=</HashCode>
+      <FileName>Wire.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GatesWpf.Charting.Chart" Collapsed="true">
+    <Position X="10.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgQQAAJAIgAAAAIAgAgAAAAQCBQBAACAAkgAAAAAIAA=</HashCode>
+      <FileName>Charting\Chart.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GatesWpf.Charting.ChartLine" Collapsed="true">
+    <Position X="12" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAEEAAAAAAAABgAAIAIIAABAAAggAiAAAACwhAAAACA=</HashCode>
+      <FileName>Charting\ChartLine.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GatesWpf.Charting.TickRuler" Collapsed="true">
+    <Position X="11.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAEAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAABwAAAgAA=</HashCode>
+      <FileName>Charting\TickRuler.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GatesWpf.DragDrop.DragDropAdornerBase" Collapsed="true">
+    <Position X="16.25" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAEAAAAAAgAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>DragDrop\DragDropAdornerBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GatesWpf.DragDrop.DragDropHelper" Collapsed="true">
+    <Position X="19.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAABgggAQBBAABAAMAAIBAXAAABQJBAAUAwAAAASoAA=</HashCode>
+      <FileName>DragDrop\DragDropHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GatesWpf.DragDrop.DragDropEventArgs" Collapsed="true">
+    <Position X="18" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAgAAgAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DragDrop\DragDropHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GatesWpf.DragDrop.DropPreviewAdorner" Collapsed="true">
+    <Position X="21.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAEAAAAAAAACCAAAACAAMAQAAAAAAAIAAAACEAAAAA=</HashCode>
+      <FileName>DragDrop\DropPreviewAdorner.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GatesWpf.DragDrop.GateDragDropAdorner" Collapsed="true">
+    <Position X="16.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DragDrop\GateDragDropAdorner.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GatesWpf.DragDrop.ReorderableListBox" Collapsed="true">
+    <Position X="21.5" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAYAAMAAIgAAAAAAAAAcAAAAAKAQAACACAAA=</HashCode>
+      <FileName>DragDrop\ReorderableListBox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GatesWpf.Properties.Resources" Collapsed="true">
+    <Position X="32" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GatesWpf.Properties.Settings" Collapsed="true">
+    <Position X="37.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GatesWpf.UIGates.BitDialog" Collapsed="true">
+    <Position X="26.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAQAAAAAAAAAAAMAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UIGates\BitDialog.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GatesWpf.UIGates.Clock" Collapsed="true">
+    <Position X="26" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAAAQAAAABAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UIGates\Clock.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GatesWpf.UIGates.Comment" Collapsed="true">
+    <Position X="2" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAgIAAQAAAAAAAAAQAAAEAAEAAAAAAAAAA=</HashCode>
+      <FileName>UIGates\Comment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GatesWpf.UIGates.IC" Collapsed="true">
+    <Position X="4.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAEAAAAAEAgAIBAQAAAAAAAAiQAAAEAEAAABAAAIIAA=</HashCode>
+      <FileName>UIGates\IC.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GatesWpf.UIGates.Numeric" Collapsed="true">
+    <Position X="7.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAACAAQAAABBAAAAAAAAAAAAAAAQACABAA=</HashCode>
+      <FileName>UIGates\Numeric.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GatesWpf.UIGates.DefaultNumericInput" Collapsed="true">
+    <Position X="6.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UIGates\Numeric.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GatesWpf.UIGates.DefaultNumericOutput" Collapsed="true">
+    <Position X="8.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UIGates\Numeric.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GatesWpf.UIGates.ShapeGate" Collapsed="true">
+    <Position X="18.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAAAEAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>UIGates\ShapeGate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GatesWpf.UIGates.And" Collapsed="true">
+    <Position X="14.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UIGates\ShapeGate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GatesWpf.UIGates.Not" Collapsed="true">
+    <Position X="18.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UIGates\ShapeGate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GatesWpf.UIGates.Or" Collapsed="true">
+    <Position X="11" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UIGates\ShapeGate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GatesWpf.UIGates.Nor" Collapsed="true">
+    <Position X="15.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UIGates\ShapeGate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GatesWpf.UIGates.Nand" Collapsed="true">
+    <Position X="12" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UIGates\ShapeGate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GatesWpf.UIGates.Xor" Collapsed="true">
+    <Position X="16.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UIGates\ShapeGate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GatesWpf.UIGates.Xnor" Collapsed="true">
+    <Position X="13.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UIGates\ShapeGate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GatesWpf.UIGates.Buffer" Collapsed="true">
+    <Position X="17.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UIGates\ShapeGate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GatesWpf.UIGates.UserIO" Collapsed="true">
+    <Position X="22.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAACBAAAAAAAQAAAAAAAAAAgAAIAAEiAAAAAAAEQ=</HashCode>
+      <FileName>UIGates\UserIO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GatesWpf.UIGates.UserInput" Collapsed="true">
+    <Position X="23.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAgAAAQAAAAAAA=</HashCode>
+      <FileName>UIGates\UserIO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GatesWpf.UIGates.UserOutput" Collapsed="true">
+    <Position X="21.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UIGates\UserIO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GatesWpf.UndoRedo.ChangeUserText" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="31.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAABAAABAAAEAAABAQBAAAAAAAIAAAAAAEAAAA=</HashCode>
+      <FileName>UndoRedo\GateUndos.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="GatesWpf.UndoRedo.ReplaceIC" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="28" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAABADABAAAAAAAAAQBAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>UndoRedo\GateUndos.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="GatesWpf.UndoRedo.CreateIC" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="31.5" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAABAAABAAAAAAAAAQBAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>UndoRedo\GateUndos.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="GatesWpf.UndoRedo.TrackingGate" Collapsed="true">
+    <Position X="28.75" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEABAAABAAAAAAAAAQBAAAAAAAIAAAAAAEAAAA=</HashCode>
+      <FileName>UndoRedo\GateUndos.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="GatesWpf.UndoRedo.MoveGate" Collapsed="true">
+    <Position X="28.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAABAAABAAAAAAAAAQBAAAACAAAAAAAAAEAAAA=</HashCode>
+      <FileName>UndoRedo\GateUndos.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GatesWpf.UndoRedo.RotateGate" Collapsed="true">
+    <Position X="31" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAABAAABAAAAAAAAAQBAAAACAAAAAAAAAEAAAA=</HashCode>
+      <FileName>UndoRedo\GateUndos.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GatesWpf.UndoRedo.ChangeNumInputs" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="29.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAABAAABAAAAAAAAAQBAAAABACAAAAAAAEAAAA=</HashCode>
+      <FileName>UndoRedo\GateUndos.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="GatesWpf.UndoRedo.ConnectWire" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="29.75" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAABAAABAAAAAAAAAQBAAAACACAAAAAAAEAAAA=</HashCode>
+      <FileName>UndoRedo\GateUndos.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="GatesWpf.UndoRedo.AddGate" Collapsed="true">
+    <Position X="26.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAABAAAAAAAAAQBAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>UndoRedo\GateUndos.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GatesWpf.UndoRedo.Reverse" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="26.25" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAABAAABAAAAAAAAAQBAAAEAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>UndoRedo\GateUndos.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="GatesWpf.UndoRedo.Transaction" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="26.25" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAABAAABAAAAAAAAAQBAAAAAAAAAAAAAAEAAAE=</HashCode>
+      <FileName>UndoRedo\Transaction.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="GatesWpf.UndoRedo.UndoManager" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="28" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEIAAAAABBAABIAAAACAEAQDgAAAAAAAABAAAAFBAAA=</HashCode>
+      <FileName>UndoRedo\UndoManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="GatesWpf.UndoRedo.IUndoable" Collapsed="true">
+    <Position X="26.25" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAABAAAAAAAAAQBAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>UndoRedo\IUndoable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="GatesWpf.DragDrop.DropState" Collapsed="true">
+    <Position X="18" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DragDrop\DragDropAdornerBase.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

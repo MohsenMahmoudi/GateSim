@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/tp1/!svn/ver/250/steve/GateSim/Gates/BasicGates
+END
+Nor.cs
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/tp1/!svn/ver/374/steve/GateSim/Gates/BasicGates/Nor.cs
+END
+NAnd.cs
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/tp1/!svn/ver/374/steve/GateSim/Gates/BasicGates/NAnd.cs
+END
+Not.cs
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/tp1/!svn/ver/374/steve/GateSim/Gates/BasicGates/Not.cs
+END
+Or.cs
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/tp1/!svn/ver/374/steve/GateSim/Gates/BasicGates/Or.cs
+END
+And.cs
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/tp1/!svn/ver/374/steve/GateSim/Gates/BasicGates/And.cs
+END
+Xnor.cs
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/tp1/!svn/ver/374/steve/GateSim/Gates/BasicGates/Xnor.cs
+END
+Xor.cs
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/tp1/!svn/ver/250/steve/GateSim/Gates/BasicGates/Xor.cs
+END
+Buffer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/tp1/!svn/ver/374/steve/GateSim/Gates/BasicGates/Buffer.cs
+END

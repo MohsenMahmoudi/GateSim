@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/tp1/!svn/ver/250/steve/GateSim/Gates
+END
+IC.cs
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/tp1/!svn/ver/374/steve/GateSim/Gates/IC.cs
+END
+PropagationThread.cs
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/tp1/!svn/ver/374/steve/GateSim/Gates/PropagationThread.cs
+END
+Terminal.cs
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/tp1/!svn/ver/374/steve/GateSim/Gates/Terminal.cs
+END
+ClassDiagram1.cd
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/tp1/!svn/ver/168/steve/GateSim/Gates/ClassDiagram1.cd
+END
+Gates.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/tp1/!svn/ver/249/steve/GateSim/Gates/Gates.csproj
+END
+IVariableInputs.cs
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/tp1/!svn/ver/374/steve/GateSim/Gates/IVariableInputs.cs
+END
+Circuit.cs
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/tp1/!svn/ver/374/steve/GateSim/Gates/Circuit.cs
+END
+AbstractGate.cs
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/tp1/!svn/ver/374/steve/GateSim/Gates/AbstractGate.cs
+END

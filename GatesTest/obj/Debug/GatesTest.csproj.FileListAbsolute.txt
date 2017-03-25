@@ -1,0 +1,7 @@
+C:\Users\skollmansberger\Desktop\GateSim\GatesTest\bin\Debug\GatesTest.dll
+C:\Users\skollmansberger\Desktop\GateSim\GatesTest\bin\Debug\GatesTest.pdb
+C:\Users\skollmansberger\Desktop\GateSim\GatesTest\bin\Debug\Gates.dll
+C:\Users\skollmansberger\Desktop\GateSim\GatesTest\bin\Debug\Gates.pdb
+C:\Users\skollmansberger\Desktop\GateSim\GatesTest\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\skollmansberger\Desktop\GateSim\GatesTest\obj\Debug\GatesTest.dll
+C:\Users\skollmansberger\Desktop\GateSim\GatesTest\obj\Debug\GatesTest.pdb

@@ -1,0 +1,38 @@
+﻿<Window x:Class="GatesWpf.Charting.Chart"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:dragDrop="clr-namespace:GatesWpf.DragDrop"
+        xmlns:local="clr-namespace:GatesWpf.Charting"
+    Title="Oscilloscope" Icon="../Images/LegendHS.png" Height="300" Width="400">
+    
+    <Grid Background="LightGray">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="80" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Slider Minimum="0.001" Maximum="10" Value="1" Grid.Column="1" Name="slZoom" ValueChanged="slZoom_ValueChanged" ToolTip="Zoom" Margin="5,5,5,5" />
+        <StackPanel Orientation="Horizontal" Margin="5,5,5,5">
+            <ToggleButton Name="btnPause" Width="25" Checked="btnPause_Checked" Unchecked="btnPause_Checked" ToolTip="Pause">
+                <Image Source="../Images/PauseHS.png" Height="20" />
+            </ToggleButton>
+            <Button Name="btnReset" Width="25" ToolTip="Reset Display" Click="btnReset_Click">
+                <Image Source="../Images/RefreshDocViewHS.png" Height="18" />
+            </Button>
+        </StackPanel>
+        
+        <ScrollViewer Name="lbLineLabelsScroller" Grid.Row="1" Grid.Column="0" ScrollViewer.VerticalScrollBarVisibility="Hidden">
+            <dragDrop:ReorderableListBox Background="LightGray" x:Name="lbLineLabels" ItemsReordered="lbLines_ItemsReordered" BorderThickness="0"  />
+        </ScrollViewer>
+        <ScrollViewer Name="lbLinesScroller"  Grid.Row="1" Grid.Column="1" ScrollChanged="lbLines_ScrollChanged" ScrollViewer.HorizontalScrollBarVisibility="Visible" >
+            <dragDrop:ReorderableListBox Grid.Row="1" Grid.Column="1" Background="LightGray" x:Name="lbLines" ItemsReordered="lbLines_ItemsReordered"  />
+        </ScrollViewer>
+        <local:TickRuler x:Name="tickRuler" Grid.Row="2" Grid.Column="1" Margin="5,0,0,0" />
+
+    </Grid>
+    
+</Window>

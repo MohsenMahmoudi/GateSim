@@ -1,0 +1,184 @@
+﻿<Window x:Class="GatesWpf.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+
+        xmlns:local="clr-namespace:GatesWpf"
+        xmlns:gates="clr-namespace:GatesWpf.UIGates"
+        xmlns:dragDrop="clr-namespace:GatesWpf.DragDrop"
+        xmlns:undoRedo="clr-namespace:GatesWpf.UndoRedo"
+    Title="[Untitled] - Logic Gate Simulator" Height="500" Width="650" Icon="Images/ram.png">
+    <Window.Resources>
+        <undoRedo:UndoManager x:Key="undoManager" />
+        <Style x:Key="TgButtonStyle" TargetType="{x:Type ToggleButton}">
+            <Setter Property="ToolTipService.ShowOnDisabled" Value="True" />
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding RelativeSource={RelativeSource Self}, Path=IsEnabled}" Value="False">
+                    <Setter Property="Opacity" Value="0.50" />
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+        <Style x:Key="TButtonStyle" TargetType="{x:Type Button}" BasedOn="{StaticResource {x:Static ToolBar.ButtonStyleKey}}">
+            
+            <Setter Property="ToolTipService.ShowOnDisabled" Value="True" />
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding RelativeSource={RelativeSource Self}, Path=IsEnabled}" Value="False">
+                    <Setter Property="Opacity" Value="0.50" />
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+
+
+    </Window.Resources>
+    
+    
+    
+    <Grid Name="Grid1">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+
+
+        <local:GateSelector x:Name="spGates" Grid.Row="1" />
+
+        <local:GateCanvas x:Name="gateCanvas" Grid.Column="1" Grid.Row="1" />
+
+        <StackPanel Orientation="Horizontal" Name="spZoom">
+            <Image Source="Images/ZoomHS.png" Height="20"  />
+            <Slider Name="slZoom" Minimum="0.01" Maximum="5" Value="1" SmallChange="0.01"  
+                    LargeChange="0.1" ToolTip="Adjust circuit zoom"
+                Width="60" Height="20" ValueChanged="slZoom_ValueChanged"/>
+
+            
+                <Button Style="{StaticResource TButtonStyle}" Height="20" Name="btnActualSize" Click="btnActualSize_Click" ToolTip="Zoom to Default Size" >
+                    <Image Source="Images/ActualSizeHS.png" />
+                </Button>
+                <Button Style="{StaticResource TButtonStyle}" Height="20" Name="btnFitToScreen" Click="btnFitToScreen_Click" ToolTip="Zoom to Fit Circuit in Window">
+                    <Image Source="Images/PageWidthHS.png" />
+                </Button>
+            
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" Name="spSpeed">
+            <Image Source="Images/turtle.png" Height="20"  />
+            <Slider Name="slSpeed" Minimum="1" Maximum="400" SmallChange="5" LargeChange="20" Value="1" Width="60" Height="20" IsDirectionReversed="True" ToolTip="Adjust simulation speed"  />
+            <Image Source="Images/hare.png" Height="20"  />
+        </StackPanel>
+
+        <ToolBarTray Grid.Row="0" Grid.ColumnSpan="2">
+            <ToolBar Height="28" Name="tbFile" Visibility="Collapsed" >
+                <Button Style="{StaticResource TButtonStyle}" Click="btnNew_Click" ToolTip="New File (Ctrl+N)">
+                    <Image Source="Images/NewDocumentHS.png" />
+                </Button>
+                <Button Style="{StaticResource TButtonStyle}" Click="btnOpen_Click" ToolTip="Open File (Ctrl+O)">
+                    <Image Source="Images/openHS.png" />
+                </Button>
+                <Button Style="{StaticResource TButtonStyle}" Click="btnSave_Click" ToolTip="Save File (Ctrl+S)" IsEnabled="False" Name="btnSave">
+                    <Image Source="Images/saveHS.png" />
+                </Button>
+                <Button Style="{StaticResource TButtonStyle}" Click="btnSave_As_Click" ToolTip="Save File As">
+                    <Image Source="Images/saveAsHS.png" />
+                </Button>
+            </ToolBar>
+            <ToolBar Height="28" Name="tbEdit" Visibility="Collapsed">
+                <Button Style="{StaticResource TButtonStyle}" Name="btnCut" Click="btnCut_Click" ToolTip="Cut (Ctrl+X)" IsEnabled="False" >
+                    <Image Source="Images/CutHS.png" />
+                </Button>
+                <Button Style="{StaticResource TButtonStyle}" Name="btnCopy" Click="btnCopy_Click" ToolTip="Copy (Ctrl+C)" IsEnabled="False">
+                    <Image Source="Images/CopyHS.png" />
+                </Button>
+                <Button Style="{StaticResource TButtonStyle}" Name="btnCopyAsImage" ToolTip="Copy As Image" Click="btnCopyAsImage_Click" IsEnabled="False">
+                    <Image Source="Images/CopyAsImage.png" />
+                </Button>
+                <Button Style="{StaticResource TButtonStyle}" Name="btnPaste" Click="btnPaste_Click" ToolTip="Paste (Ctrl+V)" IsEnabled="False">
+                    <Image Source="Images/PasteHS.png" />
+                </Button>
+                <Button Style="{StaticResource TButtonStyle}" Name="btnFlatten" Click="btnFlatten_Click" ToolTip="Flatten Circuit">
+                    <Image Source="Images/Steamroller-32x32.png" />
+                </Button>
+                <Button Style="{StaticResource TButtonStyle}" Name="btnAlignTopLeft" ToolTip="Align Circuit to Upper-Left" Click="btnAlignTopLeft_Click">
+                    <Image Source="Images/CanvasScaleHS.png" />
+                </Button>
+                
+            </ToolBar>
+            <ToolBar Height="28" Name="tbPrinting">
+                
+                <Button Style="{StaticResource TButtonStyle}" Name="btnPrint" Click="btnPrint_Click" ToolTip="Print Circuit (Ctrl+P)">
+                    <Image Source="Images/PrintHS.png" />
+                </Button>
+                
+                <Button Style="{StaticResource TButtonStyle}" Name="btnSaveAsImage" ToolTip="Save Circuit as Image" Click="btnSaveAsImage_Click">
+                    <Image Source="Images/SaveAsImage.png" />
+                </Button>
+
+                <Button Style="{StaticResource TButtonStyle}" Name="btnChart" ToolTip="Show Logical Analyzer (Oscilloscope)" Click="btnChart_Click">
+                    <Image Source="Images/LegendHS.png" />
+                </Button>
+                
+                <!--
+                <Button Style="{StaticResource TButtonStyle}">
+                    <Image Source="Images/PrintPreviewHS.png" />
+                </Button>
+                <Button Style="{StaticResource TButtonStyle}">
+                    <Image Source="Images/PrintSetupHS.png" />
+                </Button>
+                -->
+                
+            </ToolBar>
+            <ToolBar Height="28" Name="tbUndo" Visibility="Collapsed">
+            <Button ToolTip="{Binding Source={StaticResource undoManager}, Path=UndoName}" Style="{StaticResource TButtonStyle}"  IsEnabled="{Binding Source={StaticResource undoManager}, Path=CanUndo}" Click="btnUndo_Click" Name="btnUndo">
+                <Image Source="Images/Edit_UndoHS.png" />
+            </Button>
+            <Button ToolTip="{Binding Source={StaticResource undoManager}, Path=RedoName}" Style="{StaticResource TButtonStyle}" IsEnabled="{Binding Source={StaticResource undoManager}, Path=CanRedo}" Click="btnRedo_Click" Name="btnRedo">
+                <Image Source="Images/Edit_RedoHS.png" />
+            </Button>
+                <!-- <Button Name="btnClearUndos" Click="btnClearUndos_Click">X</Button> -->
+            </ToolBar>
+            <ToolBar Height="28" Name="tbIC" Visibility="Collapsed">
+                <Button Style="{StaticResource TButtonStyle}" Click="btnCreateIC_Click" ToolTip="Create IC">
+                    <Image Source="Images/ram.png" MouseEnter="Image_MouseEnter" MouseLeave="Image_MouseLeave" />
+                </Button>
+                <Button Style="{StaticResource TButtonStyle}" Click="btnImportIC_Click" ToolTip="Import IC">
+                    <Image Source="Images/ImportXMLHS.png" />
+                </Button>
+               
+
+            </ToolBar>
+            <ToolBar Height="28" Name="tbVis">
+                <ToggleButton Name="btnShowHideToolbars" IsChecked="True" Style="{StaticResource TgButtonStyle}" ToolTip="Show or Hide Tools" Checked="btnShowHideToolbars_Checked" Unchecked="btnShowHideToolbars_Unchecked">
+                    <Image Source="Images/BehindTextHS.png" />
+                </ToggleButton>
+                <ToggleButton Name="btnShowTrueFalse" IsChecked="True" ToolTip="Show or Hide True/False Coloration" Checked="btnShowTrueFalse_Checked" Unchecked="btnShowTrueFalse_Unchecked">
+                    <Image Source="Images/wire_color.png">
+                        <Image.RenderTransform>
+                            <RotateTransform Angle="90" CenterX="8" CenterY="8"  />
+                        </Image.RenderTransform>
+                    </Image>
+                </ToggleButton>
+                <ToggleButton Name="btnUserMode" ToolTip="End-User Mode" Checked="btnUserMode_Checked" Unchecked="btnUserMode_Unchecked">
+                    <Image Source="Images/ProtectFormHS.png" />
+                </ToggleButton>
+
+            </ToolBar>
+           
+        </ToolBarTray>
+
+        <StackPanel Name="spAppInfo" Grid.Row="2" Grid.ColumnSpan="2" Orientation="Horizontal" Background="#EEEEEE">
+            <TextBlock Name="lblAppTitle" Margin="10,0,0,0" />
+            <TextBlock Name="lblAppVersion" Margin="10,0,0,0" />
+            <TextBlock Name="lblAppCopyright" Margin="10,0,0,0" />
+            <TextBlock Name="lblLink"  Margin="10,0,0,0"><Hyperlink NavigateUri="http://www.kolls.net/gatesim" RequestNavigate="Hyperlink_RequestNavigate">http://www.kolls.net/gatesim</Hyperlink></TextBlock>
+        </StackPanel>
+        <TextBlock Name="lblInfoLine" Background="#EEEEEE" Grid.Row="2" Grid.ColumnSpan="2"  Padding="10,0,0,0" Visibility="Hidden" />
+        
+
+        <Canvas x:Name="adornerLayer" Visibility="Collapsed"/>
+    </Grid>
+        
+</Window>

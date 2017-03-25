@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CircuitGroup Version="1.2">
+  <Circuit Name="D-FlipFlop">
+    <Gates>
+      <Gate Type="UserInput" Name="D" ID="1">
+        <Point X="448" Y="320" Angle="0" />
+      </Gate>
+      <Gate Type="UserInput" Name="Cp" ID="2">
+        <Point X="448" Y="416" Angle="0" />
+      </Gate>
+      <Gate Type="Nand" Name="Nand" ID="3" NumInputs="2">
+        <Point X="704" Y="320" Angle="0" />
+      </Gate>
+      <Gate Type="Nand" Name="Nand" ID="4" NumInputs="2">
+        <Point X="672" Y="416" Angle="0" />
+      </Gate>
+      <Gate Type="Nand" Name="Nand" ID="5" NumInputs="2">
+        <Point X="567" Y="461" Angle="0" />
+      </Gate>
+      <Gate Type="Nand" Name="Nand" ID="6" NumInputs="2">
+        <Point X="832" Y="320" Angle="0" />
+      </Gate>
+      <Gate Type="Nand" Name="Nand" ID="7" NumInputs="2">
+        <Point X="832" Y="416" Angle="0" />
+      </Gate>
+      <Gate Type="UserOutput" Name="Q" ID="8">
+        <Point X="918" Y="323" Angle="0" />
+      </Gate>
+      <Gate Type="UserOutput" Name="~Q" ID="9">
+        <Point X="926" Y="416" Angle="0" />
+      </Gate>
+    </Gates>
+    <Wires>
+      <Wire>
+        <From ID="2" Port="0" />
+        <To ID="3" Port="0" />
+      </Wire>
+      <Wire>
+        <From ID="1" Port="0" />
+        <To ID="3" Port="1" />
+      </Wire>
+      <Wire>
+        <From ID="5" Port="0" />
+        <To ID="4" Port="0" />
+      </Wire>
+      <Wire>
+        <From ID="2" Port="0" />
+        <To ID="4" Port="1" />
+      </Wire>
+      <Wire>
+        <From ID="1" Port="0" />
+        <To ID="5" Port="0" />
+      </Wire>
+      <Wire>
+        <From ID="1" Port="0" />
+        <To ID="5" Port="1" />
+      </Wire>
+      <Wire>
+        <From ID="7" Port="0" />
+        <To ID="6" Port="0" />
+      </Wire>
+      <Wire>
+        <From ID="3" Port="0" />
+        <To ID="6" Port="1" />
+      </Wire>
+      <Wire>
+        <From ID="4" Port="0" />
+        <To ID="7" Port="0" />
+      </Wire>
+      <Wire>
+        <From ID="6" Port="0" />
+        <To ID="7" Port="1" />
+      </Wire>
+      <Wire>
+        <From ID="6" Port="0" />
+        <To ID="8" Port="0" />
+      </Wire>
+      <Wire>
+        <From ID="7" Port="0" />
+        <To ID="9" Port="0" />
+      </Wire>
+    </Wires>
+  </Circuit>
+</CircuitGroup>

@@ -1,0 +1,8 @@
+C:\Users\skollmansberger\Desktop\GateSim\ConsoleTester\bin\Debug\ConsoleTester.exe.config
+C:\Users\skollmansberger\Desktop\GateSim\ConsoleTester\bin\Debug\ConsoleTester.exe
+C:\Users\skollmansberger\Desktop\GateSim\ConsoleTester\bin\Debug\ConsoleTester.pdb
+C:\Users\skollmansberger\Desktop\GateSim\ConsoleTester\bin\Debug\Gates.dll
+C:\Users\skollmansberger\Desktop\GateSim\ConsoleTester\bin\Debug\Gates.pdb
+C:\Users\skollmansberger\Desktop\GateSim\ConsoleTester\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\skollmansberger\Desktop\GateSim\ConsoleTester\obj\Debug\ConsoleTester.exe
+C:\Users\skollmansberger\Desktop\GateSim\ConsoleTester\obj\Debug\ConsoleTester.pdb

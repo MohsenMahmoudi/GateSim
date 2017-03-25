@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Gates.AbstractGate" Collapsed="true">
+    <Position X="17.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAIAAAEAAAAIAACABIAAQAgAAAAAAAAAAIAAAAABA=</HashCode>
+      <FileName>AbstractGate.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Gates.Circuit" Collapsed="true">
+    <Position X="0.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AARAAAAAACAQBBASCEAAQAAAAAEAQAAAKCQEAIAAYJA=</HashCode>
+      <FileName>Circuit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gates.IC" Collapsed="true">
+    <Position X="18.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BEAAIAAAAAIAAAAAAAAEAAQEEAAABAAIAAQEAAAAABA=</HashCode>
+      <FileName>IC.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gates.Terminal" Collapsed="true">
+    <Position X="2.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAAIAIEAAAAAAAAiA=</HashCode>
+      <FileName>Terminal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gates.BasicGates.And" Collapsed="true">
+    <Position X="18.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>BasicGates\And.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Gates.BasicGates.Buffer" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BasicGates\Buffer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gates.BasicGates.Nand" Collapsed="true">
+    <Position X="9.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>BasicGates\NAnd.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Gates.BasicGates.Nor" Collapsed="true">
+    <Position X="7" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>BasicGates\Nor.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Gates.BasicGates.Not" Collapsed="true">
+    <Position X="11.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BasicGates\Not.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gates.BasicGates.Or" Collapsed="true">
+    <Position X="16" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>BasicGates\Or.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Gates.BasicGates.Xnor" Collapsed="true">
+    <Position X="20.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BasicGates\Xnor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gates.BasicGates.Xor" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BasicGates\Xor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gates.IOGates.AbstractNumeric" Collapsed="true">
+    <Position X="13" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAIAAAAQASAAAEAAAAAAQAAAAAAAAAAAAgQAAAAAA=</HashCode>
+      <FileName>IOGates\AbstractNumeric.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gates.IOGates.Clock" Collapsed="true">
+    <Position X="9.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAQAAAAACAAAAAQAgCAAQAAAAAAAAAAAQgAAAAABA=</HashCode>
+      <FileName>IOGates\Clock.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gates.IOGates.Comment" Collapsed="true">
+    <Position X="13.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAEAAAAAAAAAAAAAQAAAAAAAAAAAAgAAAAABA=</HashCode>
+      <FileName>IOGates\Comment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gates.IOGates.NumericInput" Collapsed="true">
+    <Position X="11.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>IOGates\NumericInput.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gates.IOGates.NumericOutput" Collapsed="true">
+    <Position X="14" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAABA=</HashCode>
+      <FileName>IOGates\NumericOutput.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gates.IOGates.UserIO" Collapsed="true">
+    <Position X="6.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAAAgAAAQAAAAAAAAAAAAgQAAAAAA=</HashCode>
+      <FileName>IOGates\UserIO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gates.IOGates.UserInput" Collapsed="true">
+    <Position X="5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>IOGates\UserIO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gates.IOGates.UserOutput" Collapsed="true">
+    <Position X="7.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>IOGates\UserIO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gates.SyncQueue.ConcurrentQueue&lt;T&gt;" Collapsed="true">
+    <Position X="2.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAEAAAAgAAAAMABAAIAAAAAAAAAAA=</HashCode>
+      <FileName>SyncQueue\ConcurrentQueue.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gates.SyncQueue.SyncEvents" Collapsed="true">
+    <Position X="0.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAQQAAAAAAEAAEAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SyncQueue\SyncEvents.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gates.TruthTable.StatefulTruthTable" Collapsed="true">
+    <Position X="16.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAAAAAAQAAAAAAAAEAAAAAAAAABA=</HashCode>
+      <FileName>TruthTable\StatefulTruthTable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gates.TruthTable.TruthTable" Collapsed="true">
+    <Position X="16.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CEAAAAAAAAAAAAAACAEAQAQAAAAAACAAAAAEAAAAABA=</HashCode>
+      <FileName>TruthTable\TruthTable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Gates.IVariableInputs" Collapsed="true">
+    <Position X="2.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>IVariableInputs.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Gates.TruthTable.ICreateTruthTable" Collapsed="true">
+    <Position X="0.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>TruthTable\ICreateTruthTable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

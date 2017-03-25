@@ -1,0 +1,203 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/tp1/!svn/ver/359/steve/GateSim/GatesWpf
+END
+GatesWpf.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/tp1/!svn/ver/373/steve/GateSim/GatesWpf/GatesWpf.csproj
+END
+App.xaml
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/tp1/!svn/ver/141/steve/GateSim/GatesWpf/App.xaml
+END
+Gate.xaml
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/tp1/!svn/ver/86/steve/GateSim/GatesWpf/Gate.xaml
+END
+GateSelector.xaml
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/tp1/!svn/ver/147/steve/GateSim/GatesWpf/GateSelector.xaml
+END
+ToDo.txt
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/tp1/!svn/ver/351/steve/GateSim/GatesWpf/ToDo.txt
+END
+SaveClose.xaml
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/tp1/!svn/ver/123/steve/GateSim/GatesWpf/SaveClose.xaml
+END
+App.xaml.cs
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/tp1/!svn/ver/141/steve/GateSim/GatesWpf/App.xaml.cs
+END
+Gate.xaml.cs
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/tp1/!svn/ver/374/steve/GateSim/GatesWpf/Gate.xaml.cs
+END
+app.config
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/tp1/!svn/ver/198/steve/GateSim/GatesWpf/app.config
+END
+Fader.cs
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/tp1/!svn/ver/374/steve/GateSim/GatesWpf/Fader.cs
+END
+CircuitXML.cs
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/tp1/!svn/ver/374/steve/GateSim/GatesWpf/CircuitXML.cs
+END
+SaveClose.xaml.cs
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/tp1/!svn/ver/374/steve/GateSim/GatesWpf/SaveClose.xaml.cs
+END
+Window1.xaml
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/tp1/!svn/ver/373/steve/GateSim/GatesWpf/Window1.xaml
+END
+ICList.cs
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/tp1/!svn/ver/374/steve/GateSim/GatesWpf/ICList.cs
+END
+Window1.xaml.cs
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/tp1/!svn/ver/374/steve/GateSim/GatesWpf/Window1.xaml.cs
+END
+EventDispatcher.cs
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/tp1/!svn/ver/374/steve/GateSim/GatesWpf/EventDispatcher.cs
+END
+ConnectedWire.cs
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/tp1/!svn/ver/374/steve/GateSim/GatesWpf/ConnectedWire.cs
+END
+ClassDiagram1.cd
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/tp1/!svn/ver/168/steve/GateSim/GatesWpf/ClassDiagram1.cd
+END
+Wire.xaml
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/tp1/!svn/ver/130/steve/GateSim/GatesWpf/Wire.xaml
+END
+InfoLine.cs
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/tp1/!svn/ver/374/steve/GateSim/GatesWpf/InfoLine.cs
+END
+Wire.xaml.cs
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/tp1/!svn/ver/253/steve/GateSim/GatesWpf/Wire.xaml.cs
+END
+GateCanvas.xaml
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/tp1/!svn/ver/130/steve/GateSim/GatesWpf/GateCanvas.xaml
+END
+Terminal.xaml.cs
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/tp1/!svn/ver/374/steve/GateSim/GatesWpf/Terminal.xaml.cs
+END
+GateCanvas.xaml.cs
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/tp1/!svn/ver/374/steve/GateSim/GatesWpf/GateCanvas.xaml.cs
+END
+GateSelector.xaml.cs
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/tp1/!svn/ver/374/steve/GateSim/GatesWpf/GateSelector.xaml.cs
+END
+TopologicalSort.cs
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/tp1/!svn/ver/374/steve/GateSim/GatesWpf/TopologicalSort.cs
+END
+ram.ico
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/tp1/!svn/ver/132/steve/GateSim/GatesWpf/ram.ico
+END
+ShadowBox.xaml
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/tp1/!svn/ver/90/steve/GateSim/GatesWpf/ShadowBox.xaml
+END
+ShadowBox.xaml.cs
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/tp1/!svn/ver/374/steve/GateSim/GatesWpf/ShadowBox.xaml.cs
+END
+ChangeLog.txt
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/tp1/!svn/ver/373/steve/GateSim/GatesWpf/ChangeLog.txt
+END
+ICBuilder.cs
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/tp1/!svn/ver/374/steve/GateSim/GatesWpf/ICBuilder.cs
+END
+Terminal.xaml
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/tp1/!svn/ver/147/steve/GateSim/GatesWpf/Terminal.xaml
+END
+GateLocation.cs
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/tp1/!svn/ver/374/steve/GateSim/GatesWpf/GateLocation.cs
+END

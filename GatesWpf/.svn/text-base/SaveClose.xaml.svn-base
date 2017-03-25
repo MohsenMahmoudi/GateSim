@@ -1,0 +1,33 @@
+﻿<Window x:Class="GatesWpf.SaveClose"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Save Changes?" Height="150" Width="400" ResizeMode="NoResize" Icon="Images/ram.png">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Image Source="Images/Hard_drive.png" Grid.RowSpan="2" Margin="15,15,15,15" />
+        <TextBlock Name="lblCircuit" Grid.Column="1" TextWrapping="Wrap" FontFamily="Arial" FontWeight="Bold" Margin="0,15,15,0">Do you want to save the changes you made in the circuit {0}?</TextBlock>
+        <TextBlock Grid.Column="1" Grid.Row="1" TextWrapping="Wrap" FontFamily="Arial" Margin="0,10,15,0">Your changes will be lost if you don't save them.</TextBlock>
+        
+        <Grid Grid.Column="1" Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="75" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="75" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="50" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="0" Name="btnSave" IsDefault="True" Click="btnSave_Click">_Save</Button>
+            <Button Grid.Column="2" Name="btnDontSave" Click="btnDontSave_Click">_Don't Save</Button>
+            <Button Grid.Column="4" Name="btnCancel" IsCancel="True" Click="btnCancel_Click">_Cancel</Button>
+        </Grid>
+    </Grid>
+</Window>

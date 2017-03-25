@@ -1,0 +1,76 @@
+﻿<UserControl x:Class="GatesWpf.Gate"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    x:Name="GateRoot" Focusable="True" 
+    Height="64" Width="64">
+    
+    <Canvas Name="myCanvas">
+        
+            
+        
+
+        <Grid Name="topGrid" VerticalAlignment="Top" HorizontalAlignment="Stretch" Width="64" >
+            
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+
+           
+        </Grid>
+
+        <Grid Name="leftGrid" VerticalAlignment="Top" HorizontalAlignment="Stretch" Width="64" >
+            <Grid.RenderTransform>
+                <TransformGroup>
+                <RotateTransform Angle="-90" CenterY="32" CenterX="32" />
+                    <TranslateTransform Y="{Binding ExtraHeight, ElementName=GateRoot}" />
+                    </TransformGroup>
+            </Grid.RenderTransform>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            
+           
+        </Grid>
+
+
+        <Grid Name="rightGrid" VerticalAlignment="Top" HorizontalAlignment="Right" Width="64" >
+            <Grid.RenderTransform>
+                <TransformGroup>
+                    <RotateTransform Angle="90" CenterY="32" CenterX="32" />
+                    <TranslateTransform X="{Binding ExtraWidth, ElementName=GateRoot}"  />
+                </TransformGroup>
+            </Grid.RenderTransform>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            
+
+        </Grid>
+
+
+        <Grid Name="bottomGrid" VerticalAlignment="Top" HorizontalAlignment="Stretch" Width="64" >
+            <Grid.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1" CenterY="32" />
+                    <TranslateTransform Y="{Binding ExtraHeight, ElementName=GateRoot}" />
+                </TransformGroup>
+            </Grid.RenderTransform>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+
+        </Grid>
+
+        
+
+
+
+    </Canvas>
+    
+</UserControl>

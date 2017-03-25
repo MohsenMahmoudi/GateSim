@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/tp1/!svn/ver/250/steve/GateSim/Gates/TruthTable
+END
+ICreateTruthTable.cs
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/tp1/!svn/ver/374/steve/GateSim/Gates/TruthTable/ICreateTruthTable.cs
+END
+TruthTable.cs
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/tp1/!svn/ver/250/steve/GateSim/Gates/TruthTable/TruthTable.cs
+END
+StatefulTruthTable.cs
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/tp1/!svn/ver/374/steve/GateSim/Gates/TruthTable/StatefulTruthTable.cs
+END

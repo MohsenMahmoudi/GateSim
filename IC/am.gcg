@@ -1,0 +1,651 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+				you may distribute this file at will but please always include the attributions
+				at the end of this comment
+
+				IC types &1, &2, &3 are "and" gates that
+				output the normal result and
+				both (&1) or one (&2, &3) of their inputs
+
+				fa's and ha's are the usual adders
+
+				buffers are for aesthetic purposes only
+
+				implemented by dave jordan 3/2011, after
+				Algorithms (Cormen, Leiserson, Rivest; MIT Press; 1990; p. 673)
+
+				In Memoriam Trey Addington
+				Thanks to Steve Kollmansberger
+-->
+<CircuitGroup Version="1.2">
+  <Circuit Name="&amp;1">
+	  <Gates>
+		<Gate Type="And" Name="And" ID="101" NumInputs="2"> <Point X="166.46904805913647" Y="122.70224094813369" Angle="0" /> </Gate>
+      <Gate Type="UserInput" Name="a" ID="102"> <Point X="0" Y="96" Angle="0" /> </Gate>
+      <Gate Type="UserOutput" Name="UserOutput" ID="103"> <Point X="353" Y="118" Angle="0" /> </Gate>
+      <Gate Type="UserInput" Name="b" ID="104"> <Point X="0" Y="192" Angle="0" /> </Gate>
+      <Gate Type="UserOutput" Name="aout" ID="105"> <Point X="60.382959841977708" Y="232.46216985005572" Angle="90" /> </Gate>
+      <Gate Type="UserOutput" Name="bout" ID="106"> <Point X="64" Y="0" Angle="270" /> </Gate>
+    </Gates>
+    <Wires>
+      <Wire> <From ID="104" Port="0" /> <To ID="101" Port="0" /> </Wire>
+      <Wire> <From ID="102" Port="0" /> <To ID="101" Port="1" /> </Wire>
+      <Wire> <From ID="101" Port="0" /> <To ID="103" Port="0" /> </Wire>
+      <Wire> <From ID="102" Port="0" /> <To ID="105" Port="0" /> </Wire>
+      <Wire> <From ID="104" Port="0" /> <To ID="106" Port="0" /> </Wire>
+    </Wires>
+  </Circuit>
+  <Circuit Name="&amp;2">
+    <Gates>
+      <Gate Type="And" Name="And" ID="101" NumInputs="2"> <Point X="166.46904805913647" Y="122.70224094813369" Angle="0" /> </Gate>
+      <Gate Type="UserInput" Name="a" ID="102"> <Point X="0" Y="96" Angle="0" /> </Gate>
+      <Gate Type="UserOutput" Name="UserOutput" ID="103"> <Point X="353" Y="118" Angle="0" /> </Gate>
+      <Gate Type="UserInput" Name="b" ID="104"> <Point X="0" Y="192" Angle="0" /> </Gate>
+      <Gate Type="UserOutput" Name="aout" ID="105"> <Point X="217.38295984197771" Y="328.46216985005572" Angle="0" /> </Gate>
+    </Gates>
+    <Wires>
+      <Wire> <From ID="104" Port="0" /> <To ID="101" Port="0" /> </Wire>
+      <Wire> <From ID="102" Port="0" /> <To ID="101" Port="1" /> </Wire>
+      <Wire> <From ID="101" Port="0" /> <To ID="103" Port="0" /> </Wire>
+      <Wire> <From ID="102" Port="0" /> <To ID="105" Port="0" /> </Wire>
+    </Wires>
+  </Circuit>
+  <Circuit Name="&amp;3">
+    <Gates>
+      <Gate Type="And" Name="And" ID="101" NumInputs="2"> <Point X="166.46904805913647" Y="122.70224094813369" Angle="0" /> </Gate>
+      <Gate Type="UserInput" Name="a" ID="102"> <Point X="0" Y="96" Angle="0" /> </Gate>
+      <Gate Type="UserOutput" Name="UserOutput" ID="103"> <Point X="353" Y="118" Angle="0" /> </Gate>
+      <Gate Type="UserInput" Name="b" ID="104"> <Point X="0" Y="192" Angle="0" /> </Gate>
+      <Gate Type="UserOutput" Name="bout" ID="105"> <Point X="192" Y="-14" Angle="270" /> </Gate>
+    </Gates>
+    <Wires>
+      <Wire> <From ID="104" Port="0" /> <To ID="101" Port="0" /> </Wire>
+      <Wire> <From ID="102" Port="0" /> <To ID="101" Port="1" /> </Wire>
+      <Wire> <From ID="101" Port="0" /> <To ID="103" Port="0" /> </Wire>
+      <Wire> <From ID="104" Port="0" /> <To ID="105" Port="0" /> </Wire>
+    </Wires>
+  </Circuit>
+  <Circuit Name="fa">
+    <Gates> <Gate Type="And" Name="And" ID="101" NumInputs="2"> <Point X="115" Y="139" Angle="90" />
+      </Gate>
+      <Gate Type="And" Name="And" ID="102" NumInputs="2"> <Point X="174" Y="139" Angle="90" /> </Gate>
+      <Gate Type="And" Name="And" ID="103" NumInputs="2"> <Point X="229" Y="139" Angle="90" /> </Gate>
+      <Gate Type="Xor" Name="Xor" ID="104"> <Point X="313" Y="142" Angle="90" /> </Gate>
+      <Gate Type="Xor" Name="Xor" ID="105"> <Point X="303" Y="238" Angle="90" /> </Gate>
+      <Gate Type="Or" Name="Or" ID="106" NumInputs="2"> <Point X="202" Y="210" Angle="90" /> </Gate>
+      <Gate Type="Or" Name="Or" ID="107" NumInputs="2"> <Point X="111" Y="273" Angle="90" /> </Gate>
+      <Gate Type="UserInput" Name="x" ID="108"> <Point X="0" Y="180" Angle="0" /> </Gate>
+      <Gate Type="UserInput" Name="y" ID="109"> <Point X="182" Y="0" Angle="90" /> </Gate>
+      <Gate Type="UserInput" Name="z" ID="1010"> <Point X="278" Y="0" Angle="90" /> </Gate>
+      <Gate Type="UserOutput" Name="s" ID="1011"> <Point X="406" Y="224" Angle="0" /> </Gate>
+      <Gate Type="UserOutput" Name="c" ID="1012"> <Point X="246" Y="320" Angle="0" /> </Gate>
+    </Gates>
+    <Wires>
+      <Wire> <From ID="108" Port="0" /> <To ID="101" Port="0" /> </Wire>
+      <Wire> <From ID="1010" Port="0" /> <To ID="101" Port="1" /> </Wire>
+      <Wire> <From ID="108" Port="0" /> <To ID="102" Port="0" /> </Wire>
+      <Wire> <From ID="109" Port="0" /> <To ID="102" Port="1" /> </Wire>
+      <Wire> <From ID="109" Port="0" /> <To ID="103" Port="0" /> </Wire>
+      <Wire> <From ID="1010" Port="0" /> <To ID="103" Port="1" /> </Wire>
+      <Wire> <From ID="109" Port="0" /> <To ID="104" Port="0" /> </Wire>
+      <Wire> <From ID="1010" Port="0" /> <To ID="104" Port="1" /> </Wire>
+      <Wire> <From ID="108" Port="0" /> <To ID="105" Port="0" /> </Wire>
+      <Wire> <From ID="104" Port="0" /> <To ID="105" Port="1" /> </Wire>
+      <Wire> <From ID="102" Port="0" /> <To ID="106" Port="0" /> </Wire>
+      <Wire> <From ID="103" Port="0" /> <To ID="106" Port="1" /> </Wire>
+      <Wire> <From ID="101" Port="0" /> <To ID="107" Port="0" /> </Wire>
+      <Wire> <From ID="106" Port="0" /> <To ID="107" Port="1" /> </Wire>
+      <Wire> <From ID="105" Port="0" /> <To ID="1011" Port="0" /> </Wire>
+      <Wire> <From ID="107" Port="0" /> <To ID="1012" Port="0" /> </Wire>
+    </Wires>
+  </Circuit>
+  <Circuit Name="ha">
+    <Gates> <Gate Type="And" Name="And" ID="101" NumInputs="2"> <Point X="174" Y="139" Angle="90" />
+      </Gate>
+      <Gate Type="Xor" Name="Xor" ID="102"> <Point X="303" Y="238" Angle="90" /> </Gate>
+      <Gate Type="UserInput" Name="x" ID="103"> <Point X="0" Y="180" Angle="0" /> </Gate>
+      <Gate Type="UserInput" Name="y" ID="104"> <Point X="182" Y="0" Angle="90" /> </Gate>
+      <Gate Type="UserOutput" Name="s" ID="105"> <Point X="406" Y="224" Angle="0" /> </Gate>
+      <Gate Type="UserOutput" Name="c" ID="106"> <Point X="246" Y="320" Angle="0" /> </Gate>
+    </Gates>
+    <Wires>
+      <Wire> <From ID="103" Port="0" /> <To ID="101" Port="0" /> </Wire>
+      <Wire> <From ID="104" Port="0" /> <To ID="101" Port="1" /> </Wire>
+      <Wire> <From ID="103" Port="0" /> <To ID="102" Port="0" /> </Wire>
+      <Wire> <From ID="104" Port="0" /> <To ID="102" Port="1" /> </Wire>
+      <Wire> <From ID="102" Port="0" /> <To ID="105" Port="0" /> </Wire>
+      <Wire> <From ID="101" Port="0" /> <To ID="106" Port="0" /> </Wire>
+    </Wires>
+  </Circuit>
+  <Circuit>
+	  <Gates>
+      <Gate Type="Buffer" Name="Buffer" ID="1010"> <Point X="258" Y="170" Angle="0" /> </Gate>
+      <Gate Type="Buffer" Name="Buffer" ID="1011"> <Point X="354" Y="170" Angle="0" /> </Gate>
+      <Gate Type="Buffer" Name="Buffer" ID="1025"> <Point X="450" Y="170" Angle="0" /> </Gate>
+      <Gate Type="Buffer" Name="Buffer" ID="1026"> <Point X="546" Y="170" Angle="0" /> </Gate>
+      <Gate Type="Buffer" Name="Buffer" ID="1065"> <Point X="642" Y="170" Angle="0" /> </Gate>
+      <Gate Type="Buffer" Name="Buffer" ID="1066"> <Point X="738" Y="170" Angle="0" /> </Gate>
+      <Gate Type="Buffer" Name="Buffer" ID="1076"> <Point X="834" Y="170" Angle="0" /> </Gate>
+      <Gate Type="Buffer" Name="Buffer" ID="10164"> <Point X="258" Y="266" Angle="0" /> </Gate>
+      <Gate Type="Buffer" Name="Buffer" ID="10163"> <Point X="354" Y="266" Angle="0" /> </Gate>
+      <Gate Type="Buffer" Name="Buffer" ID="10162"> <Point X="450" Y="266" Angle="0" /> </Gate>
+      <Gate Type="Buffer" Name="Buffer" ID="10161"> <Point X="546" Y="266" Angle="0" /> </Gate>
+      <Gate Type="Buffer" Name="Buffer" ID="10160"> <Point X="642" Y="266" Angle="0" /> </Gate>
+      <Gate Type="Buffer" Name="Buffer" ID="10159"> <Point X="738" Y="266" Angle="0" /> </Gate>
+      <Gate Type="Buffer" Name="Buffer" ID="10158"> <Point X="834" Y="266" Angle="0" /> </Gate>
+      <Gate Type="Buffer" Name="Buffer" ID="1016"> <Point X="258" Y="362" Angle="0" /> </Gate>
+      <Gate Type="Buffer" Name="Buffer" ID="1018"> <Point X="354" Y="362" Angle="0" /> </Gate>
+      <Gate Type="Buffer" Name="Buffer" ID="1030"> <Point X="450" Y="362" Angle="0" /> </Gate>
+      <Gate Type="Buffer" Name="Buffer" ID="1032"> <Point X="546" Y="362" Angle="0" /> </Gate>
+      <Gate Type="Buffer" Name="Buffer" ID="1070"> <Point X="642" Y="362" Angle="0" /> </Gate>
+      <Gate Type="Buffer" Name="Buffer" ID="1072"> <Point X="738" Y="362" Angle="0" /> </Gate>
+      <Gate Type="Buffer" Name="Buffer" ID="1079"> <Point X="834" Y="362" Angle="0" /> </Gate>
+      <Gate Type="Buffer" Name="Buffer" ID="1037"> <Point X="258" Y="458" Angle="0" /> </Gate>
+      <Gate Type="Buffer" Name="Buffer" ID="1039"> <Point X="354" Y="458" Angle="0" /> </Gate>
+      <Gate Type="Buffer" Name="Buffer" ID="1050"> <Point X="450" Y="458" Angle="0" /> </Gate>
+      <Gate Type="Buffer" Name="Buffer" ID="1052"> <Point X="546" Y="458" Angle="0" /> </Gate>
+      <Gate Type="Buffer" Name="Buffer" ID="1083"> <Point X="642" Y="458" Angle="0" /> </Gate>
+      <Gate Type="Buffer" Name="Buffer" ID="1085"> <Point X="738" Y="458" Angle="0" /> </Gate>
+      <Gate Type="Buffer" Name="Buffer" ID="1094"> <Point X="834" Y="458" Angle="0" /> </Gate>
+      <Gate Type="Buffer" Name="Buffer" ID="1044"> <Point X="258" Y="554" Angle="0" /> </Gate>
+      <Gate Type="Buffer" Name="Buffer" ID="1046"> <Point X="354" Y="554" Angle="0" /> </Gate>
+      <Gate Type="Buffer" Name="Buffer" ID="1056"> <Point X="450" Y="554" Angle="0" /> </Gate>
+      <Gate Type="Buffer" Name="Buffer" ID="1058"> <Point X="546" Y="554" Angle="0" /> </Gate>
+      <Gate Type="Buffer" Name="Buffer" ID="1089"> <Point X="642" Y="554" Angle="0" /> </Gate>
+      <Gate Type="Buffer" Name="Buffer" ID="1091"> <Point X="738" Y="554" Angle="0" /> </Gate>
+      <Gate Type="Buffer" Name="Buffer" ID="1097"> <Point X="834" Y="554" Angle="0" /> </Gate>
+      <Gate Type="Buffer" Name="Buffer" ID="10102"> <Point X="258" Y="650" Angle="0" /> </Gate>
+      <Gate Type="Buffer" Name="Buffer" ID="10104"> <Point X="354" Y="650" Angle="0" /> </Gate>
+      <Gate Type="Buffer" Name="Buffer" ID="10115"> <Point X="450" Y="650" Angle="0" /> </Gate>
+      <Gate Type="Buffer" Name="Buffer" ID="10117"> <Point X="546" Y="650" Angle="0" /> </Gate>
+      <Gate Type="Buffer" Name="Buffer" ID="10131"> <Point X="642" Y="650" Angle="0" /> </Gate>
+      <Gate Type="Buffer" Name="Buffer" ID="10133"> <Point X="738" Y="650" Angle="0" /> </Gate>
+      <Gate Type="Buffer" Name="Buffer" ID="10142"> <Point X="834" Y="650" Angle="0" /> </Gate>
+      <Gate Type="Buffer" Name="Buffer" ID="10109"> <Point X="258" Y="746" Angle="0" /> </Gate>
+      <Gate Type="Buffer" Name="Buffer" ID="10111"> <Point X="354" Y="746" Angle="0" /> </Gate>
+      <Gate Type="Buffer" Name="Buffer" ID="10121"> <Point X="450" Y="746" Angle="0" /> </Gate>
+      <Gate Type="Buffer" Name="Buffer" ID="10123"> <Point X="546" Y="746" Angle="0" /> </Gate>
+      <Gate Type="Buffer" Name="Buffer" ID="10137"> <Point X="642" Y="746" Angle="0" /> </Gate>
+      <Gate Type="Buffer" Name="Buffer" ID="10139"> <Point X="738" Y="746" Angle="0" /> </Gate>
+      <Gate Type="Buffer" Name="Buffer" ID="10145"> <Point X="834" Y="746" Angle="0" /> </Gate>
+      <Gate Type="IC" Name="ha" ID="10165"> <Point X="274" Y="228" Angle="0" /> </Gate>
+      <Gate Type="IC" Name="ha" ID="10166"> <Point X="370" Y="228" Angle="0" /> </Gate>
+      <Gate Type="IC" Name="ha" ID="10167"> <Point X="466" Y="228" Angle="0" /> </Gate>
+      <Gate Type="IC" Name="ha" ID="10168"> <Point X="562" Y="228" Angle="0" /> </Gate>
+      <Gate Type="IC" Name="ha" ID="10169"> <Point X="658" Y="228" Angle="0" /> </Gate>
+      <Gate Type="IC" Name="ha" ID="10170"> <Point X="754" Y="228" Angle="0" /> </Gate>
+      <Gate Type="IC" Name="ha" ID="10171"> <Point X="850" Y="228" Angle="0" /> </Gate>
+      <Gate Type="IC" Name="fa" ID="1012"> <Point X="274" Y="322" Angle="0" /> </Gate>
+      <Gate Type="IC" Name="fa" ID="1017"> <Point X="370" Y="322" Angle="0" /> </Gate>
+      <Gate Type="IC" Name="fa" ID="1027"> <Point X="466" Y="322" Angle="0" /> </Gate>
+      <Gate Type="IC" Name="fa" ID="1031"> <Point X="562" Y="322" Angle="0" /> </Gate>
+      <Gate Type="IC" Name="fa" ID="1067"> <Point X="658" Y="322" Angle="0" /> </Gate>
+      <Gate Type="IC" Name="fa" ID="1071"> <Point X="754" Y="322" Angle="0" /> </Gate>
+      <Gate Type="IC" Name="fa" ID="1077"> <Point X="850" Y="322" Angle="0" /> </Gate>
+      <Gate Type="IC" Name="fa" ID="1033"> <Point X="274" Y="418" Angle="0" /> </Gate>
+      <Gate Type="IC" Name="fa" ID="1038"> <Point X="370" Y="418" Angle="0" /> </Gate>
+      <Gate Type="IC" Name="fa" ID="1047"> <Point X="466" Y="418" Angle="0" /> </Gate>
+      <Gate Type="IC" Name="fa" ID="1051"> <Point X="562" Y="418" Angle="0" /> </Gate>
+      <Gate Type="IC" Name="fa" ID="1080"> <Point X="658" Y="418" Angle="0" /> </Gate>
+      <Gate Type="IC" Name="fa" ID="1084"> <Point X="754" Y="418" Angle="0" /> </Gate>
+      <Gate Type="IC" Name="fa" ID="1092"> <Point X="850" Y="418" Angle="0" /> </Gate>
+      <Gate Type="IC" Name="fa" ID="1040"> <Point X="274" Y="514" Angle="0" /> </Gate>
+      <Gate Type="IC" Name="fa" ID="1045"> <Point X="370" Y="514" Angle="0" /> </Gate>
+      <Gate Type="IC" Name="fa" ID="1053"> <Point X="466" Y="514" Angle="0" /> </Gate>
+      <Gate Type="IC" Name="fa" ID="1057"> <Point X="562" Y="514" Angle="0" /> </Gate>
+      <Gate Type="IC" Name="fa" ID="1086"> <Point X="658" Y="514" Angle="0" /> </Gate>
+      <Gate Type="IC" Name="fa" ID="1090"> <Point X="754" Y="514" Angle="0" /> </Gate>
+      <Gate Type="IC" Name="fa" ID="1095"> <Point X="850" Y="514" Angle="0" /> </Gate>
+      <Gate Type="IC" Name="fa" ID="1098"> <Point X="274" Y="610" Angle="0" /> </Gate>
+      <Gate Type="IC" Name="fa" ID="10103"> <Point X="370" Y="610" Angle="0" /> </Gate>
+      <Gate Type="IC" Name="fa" ID="10112"> <Point X="466" Y="610" Angle="0" /> </Gate>
+      <Gate Type="IC" Name="fa" ID="10116"> <Point X="562" Y="610" Angle="0" /> </Gate>
+      <Gate Type="IC" Name="fa" ID="10128"> <Point X="658" Y="610" Angle="0" /> </Gate>
+      <Gate Type="IC" Name="fa" ID="10132"> <Point X="754" Y="610" Angle="0" /> </Gate>
+      <Gate Type="IC" Name="fa" ID="10140"> <Point X="850" Y="610" Angle="0" /> </Gate>
+      <Gate Type="IC" Name="fa" ID="10105"> <Point X="274" Y="706" Angle="0" /> </Gate>
+      <Gate Type="IC" Name="fa" ID="10110"> <Point X="370" Y="706" Angle="0" /> </Gate>
+      <Gate Type="IC" Name="fa" ID="10118"> <Point X="466" Y="706" Angle="0" /> </Gate>
+      <Gate Type="IC" Name="fa" ID="10122"> <Point X="562" Y="706" Angle="0" /> </Gate>
+      <Gate Type="IC" Name="fa" ID="10134"> <Point X="658" Y="706" Angle="0" /> </Gate>
+      <Gate Type="IC" Name="fa" ID="10138"> <Point X="754" Y="706" Angle="0" /> </Gate>
+      <Gate Type="IC" Name="fa" ID="10143"> <Point X="850" Y="706" Angle="0" /> </Gate>
+      <Gate Type="IC" Name="fa" ID="10124"> <Point X="274" Y="802" Angle="0" /> </Gate>
+      <Gate Type="IC" Name="fa" ID="10125"> <Point X="370" Y="802" Angle="0" /> </Gate>
+      <Gate Type="IC" Name="fa" ID="10126"> <Point X="466" Y="802" Angle="0" /> </Gate>
+      <Gate Type="IC" Name="fa" ID="10127"> <Point X="562" Y="802" Angle="0" /> </Gate>
+      <Gate Type="IC" Name="fa" ID="10146"> <Point X="658" Y="802" Angle="0" /> </Gate>
+      <Gate Type="IC" Name="fa" ID="10147"> <Point X="754" Y="802" Angle="0" /> </Gate>
+      <Gate Type="IC" Name="fa" ID="10148"> <Point X="850" Y="802" Angle="0" /> </Gate>
+      <Gate Type="IC" Name="fa" ID="10156"> <Point X="274" Y="898" Angle="45" /> </Gate>
+      <Gate Type="IC" Name="fa" ID="10151"> <Point X="370" Y="898" Angle="45" /> </Gate>
+      <Gate Type="IC" Name="fa" ID="10152"> <Point X="466" Y="898" Angle="45" /> </Gate>
+      <Gate Type="IC" Name="fa" ID="10153"> <Point X="562" Y="898" Angle="45" /> </Gate>
+      <Gate Type="IC" Name="fa" ID="10154"> <Point X="658" Y="898" Angle="45" /> </Gate>
+      <Gate Type="IC" Name="fa" ID="10155"> <Point X="754" Y="898" Angle="45" /> </Gate>
+      <Gate Type="IC" Name="ha" ID="10172"> <Point X="850" Y="898" Angle="45" /> </Gate>
+      <Gate Type="IC" Name="&amp;1" ID="102"> <Point X="132" Y="90" Angle="45" /> </Gate>
+      <Gate Type="IC" Name="&amp;1" ID="107"> <Point X="228" Y="90" Angle="45" /> </Gate>
+      <Gate Type="IC" Name="&amp;1" ID="105"> <Point X="324" Y="90" Angle="45" /> </Gate>
+      <Gate Type="IC" Name="&amp;1" ID="1022"> <Point X="420" Y="90" Angle="45" /> </Gate>
+      <Gate Type="IC" Name="&amp;1" ID="1020"> <Point X="516" Y="90" Angle="45" /> </Gate>
+      <Gate Type="IC" Name="&amp;1" ID="1062"> <Point X="612" Y="90" Angle="45" /> </Gate>
+      <Gate Type="IC" Name="&amp;1" ID="1060"> <Point X="708" Y="90" Angle="45" /> </Gate>
+      <Gate Type="IC" Name="&amp;2" ID="1074"> <Point X="804" Y="90" Angle="45" /> </Gate>
+      <Gate Type="IC" Name="&amp;1" ID="103"> <Point X="132" Y="186" Angle="45" /> </Gate>
+      <Gate Type="IC" Name="&amp;1" ID="108"> <Point X="228" Y="186" Angle="45" /> </Gate>
+      <Gate Type="IC" Name="&amp;1" ID="101"> <Point X="324" Y="186" Angle="45" /> </Gate>
+      <Gate Type="IC" Name="&amp;1" ID="1023"> <Point X="420" Y="186" Angle="45" /> </Gate>
+      <Gate Type="IC" Name="&amp;1" ID="1019"> <Point X="516" Y="186" Angle="45" /> </Gate>
+      <Gate Type="IC" Name="&amp;1" ID="1063"> <Point X="612" Y="186" Angle="45" /> </Gate>
+      <Gate Type="IC" Name="&amp;1" ID="1059"> <Point X="708" Y="186" Angle="45" /> </Gate>
+      <Gate Type="IC" Name="&amp;2" ID="1075"> <Point X="804" Y="186" Angle="45" /> </Gate>
+      <Gate Type="IC" Name="&amp;1" ID="104"> <Point X="132" Y="282" Angle="45" /> </Gate>
+      <Gate Type="IC" Name="&amp;1" ID="106"> <Point X="228" Y="282" Angle="45" /> </Gate>
+      <Gate Type="IC" Name="&amp;1" ID="109"> <Point X="324" Y="282" Angle="45" /> </Gate>
+      <Gate Type="IC" Name="&amp;1" ID="1021"> <Point X="420" Y="282" Angle="45" /> </Gate>
+      <Gate Type="IC" Name="&amp;1" ID="1024"> <Point X="516" Y="282" Angle="45" /> </Gate>
+      <Gate Type="IC" Name="&amp;1" ID="1061"> <Point X="612" Y="282" Angle="45" /> </Gate>
+      <Gate Type="IC" Name="&amp;1" ID="1064"> <Point X="708" Y="282" Angle="45" /> </Gate>
+      <Gate Type="IC" Name="&amp;2" ID="1073"> <Point X="804" Y="282" Angle="45" /> </Gate>
+      <Gate Type="IC" Name="&amp;1" ID="1014"> <Point X="132" Y="378" Angle="45" /> </Gate>
+      <Gate Type="IC" Name="&amp;1" ID="1013"> <Point X="228" Y="378" Angle="45" /> </Gate>
+      <Gate Type="IC" Name="&amp;1" ID="1015"> <Point X="324" Y="378" Angle="45" /> </Gate>
+      <Gate Type="IC" Name="&amp;1" ID="1028"> <Point X="420" Y="378" Angle="45" /> </Gate>
+      <Gate Type="IC" Name="&amp;1" ID="1029"> <Point X="516" Y="378" Angle="45" /> </Gate>
+      <Gate Type="IC" Name="&amp;1" ID="1068"> <Point X="612" Y="378" Angle="45" /> </Gate>
+      <Gate Type="IC" Name="&amp;1" ID="1069"> <Point X="708" Y="378" Angle="45" /> </Gate>
+      <Gate Type="IC" Name="&amp;2" ID="1078"> <Point X="804" Y="378" Angle="45" /> </Gate>
+      <Gate Type="IC" Name="&amp;1" ID="1035"> <Point X="132" Y="474" Angle="45" /> </Gate>
+      <Gate Type="IC" Name="&amp;1" ID="1034"> <Point X="228" Y="474" Angle="45" /> </Gate>
+      <Gate Type="IC" Name="&amp;1" ID="1036"> <Point X="324" Y="474" Angle="45" /> </Gate>
+      <Gate Type="IC" Name="&amp;1" ID="1048"> <Point X="420" Y="474" Angle="45" /> </Gate>
+      <Gate Type="IC" Name="&amp;1" ID="1049"> <Point X="516" Y="474" Angle="45" /> </Gate>
+      <Gate Type="IC" Name="&amp;1" ID="1081"> <Point X="612" Y="474" Angle="45" /> </Gate>
+      <Gate Type="IC" Name="&amp;1" ID="1082"> <Point X="708" Y="474" Angle="45" /> </Gate>
+      <Gate Type="IC" Name="&amp;2" ID="1093"> <Point X="804" Y="474" Angle="45" /> </Gate>
+      <Gate Type="IC" Name="&amp;1" ID="1042"> <Point X="132" Y="570" Angle="45" /> </Gate>
+      <Gate Type="IC" Name="&amp;1" ID="1041"> <Point X="228" Y="570" Angle="45" /> </Gate>
+      <Gate Type="IC" Name="&amp;1" ID="1043"> <Point X="324" Y="570" Angle="45" /> </Gate>
+      <Gate Type="IC" Name="&amp;1" ID="1054"> <Point X="420" Y="570" Angle="45" /> </Gate>
+      <Gate Type="IC" Name="&amp;1" ID="1055"> <Point X="516" Y="570" Angle="45" /> </Gate>
+      <Gate Type="IC" Name="&amp;1" ID="1087"> <Point X="612" Y="570" Angle="45" /> </Gate>
+      <Gate Type="IC" Name="&amp;1" ID="1088"> <Point X="708" Y="570" Angle="45" /> </Gate>
+      <Gate Type="IC" Name="&amp;2" ID="1096"> <Point X="804" Y="570" Angle="45" /> </Gate>
+      <Gate Type="IC" Name="&amp;1" ID="10100"> <Point X="132" Y="666" Angle="45" /> </Gate>
+      <Gate Type="IC" Name="&amp;1" ID="1099"> <Point X="228" Y="666" Angle="45" /> </Gate>
+      <Gate Type="IC" Name="&amp;1" ID="10101"> <Point X="324" Y="666" Angle="45" /> </Gate>
+      <Gate Type="IC" Name="&amp;1" ID="10113"> <Point X="420" Y="666" Angle="45" /> </Gate>
+      <Gate Type="IC" Name="&amp;1" ID="10114"> <Point X="516" Y="666" Angle="45" /> </Gate>
+      <Gate Type="IC" Name="&amp;1" ID="10129"> <Point X="612" Y="666" Angle="45" /> </Gate>
+      <Gate Type="IC" Name="&amp;1" ID="10130"> <Point X="708" Y="666" Angle="45" /> </Gate>
+      <Gate Type="IC" Name="&amp;2" ID="10141"> <Point X="804" Y="666" Angle="45" /> </Gate>
+      <Gate Type="IC" Name="&amp;3" ID="10107"> <Point X="132" Y="762" Angle="45" /> </Gate>
+      <Gate Type="IC" Name="&amp;3" ID="10106"> <Point X="228" Y="762" Angle="45" /> </Gate>
+      <Gate Type="IC" Name="&amp;3" ID="10108"> <Point X="324" Y="762" Angle="45" /> </Gate>
+      <Gate Type="IC" Name="&amp;3" ID="10119"> <Point X="420" Y="762" Angle="45" /> </Gate>
+      <Gate Type="IC" Name="&amp;3" ID="10120"> <Point X="516" Y="762" Angle="45" /> </Gate>
+      <Gate Type="IC" Name="&amp;3" ID="10135"> <Point X="612" Y="762" Angle="45" /> </Gate>
+      <Gate Type="IC" Name="&amp;3" ID="10136"> <Point X="708" Y="762" Angle="45" /> </Gate>
+      <Gate Type="And" Name="And" ID="10144"> <Point X="804" Y="762" Angle="45" /> </Gate>
+      <Gate Type="NumericInput" Name="Numeric Input" ID="10149" Bits="8" SelRep="10" Value="0"> <Point X="166" Y="-9" Angle="0" /> </Gate>
+      <Gate Type="NumericInput" Name="Numeric Input" ID="10150" Bits="8" SelRep="10" Value="0"> <Point X="8" Y="-8" Angle="0" /> </Gate>
+      <Gate Type="NumericOutput" Name="NumericOutput" ID="10157" Bits="16" SelRep="10" Value="0"> <Point X="800" Y="950" Angle="-45" /> </Gate>
+    </Gates>
+    <Wires>
+      <Wire> <From ID="10171" Port="0" /> <To ID="10157" Port="1" /> </Wire>
+      <Wire> <From ID="1077" Port="0" /> <To ID="10157" Port="2" /> </Wire>
+      <Wire> <From ID="1092" Port="0" /> <To ID="10157" Port="3" /> </Wire>
+      <Wire> <From ID="1095" Port="0" /> <To ID="10157" Port="4" /> </Wire>
+      <Wire> <From ID="10140" Port="0" /> <To ID="10157" Port="5" /> </Wire>
+      <Wire> <From ID="10143" Port="0" /> <To ID="10157" Port="6" /> </Wire>
+      <Wire> <From ID="10148" Port="0" /> <To ID="10157" Port="7" /> </Wire>
+      <Wire> <From ID="10172" Port="0" /> <To ID="10157" Port="8" /> </Wire>
+      <Wire> <From ID="10155" Port="0" /> <To ID="10157" Port="9" /> </Wire>
+      <Wire> <From ID="10154" Port="0" /> <To ID="10157" Port="10" /> </Wire>
+      <Wire> <From ID="10153" Port="0" /> <To ID="10157" Port="11" /> </Wire>
+      <Wire> <From ID="10152" Port="0" /> <To ID="10157" Port="12" /> </Wire>
+      <Wire> <From ID="10151" Port="0" /> <To ID="10157" Port="13" /> </Wire>
+      <Wire> <From ID="10156" Port="0" /> <To ID="10157" Port="14" /> </Wire>
+      <Wire> <From ID="10156" Port="1" /> <To ID="10157" Port="15" /> </Wire>
+      <Wire> <From ID="105" Port="1" /> <To ID="101" Port="0" /> </Wire>
+      <Wire> <From ID="108" Port="2" /> <To ID="101" Port="1" /> </Wire>
+      <Wire> <From ID="10149" Port="7" /> <To ID="102" Port="0" /> </Wire>
+      <Wire> <From ID="10150" Port="0" /> <To ID="102" Port="1" /> </Wire>
+      <Wire> <From ID="102" Port="1" /> <To ID="103" Port="0" /> </Wire>
+      <Wire> <From ID="10150" Port="1" /> <To ID="103" Port="1" /> </Wire>
+      <Wire> <From ID="103" Port="1" /> <To ID="104" Port="0" /> </Wire>
+      <Wire> <From ID="10150" Port="2" /> <To ID="104" Port="1" /> </Wire>
+      <Wire> <From ID="10149" Port="5" /> <To ID="105" Port="0" /> </Wire>
+      <Wire> <From ID="107" Port="2" /> <To ID="105" Port="1" /> </Wire>
+      <Wire> <From ID="108" Port="1" /> <To ID="106" Port="0" /> </Wire>
+      <Wire> <From ID="104" Port="2" /> <To ID="106" Port="1" /> </Wire>
+      <Wire> <From ID="10149" Port="6" /> <To ID="107" Port="0" /> </Wire>
+      <Wire> <From ID="102" Port="2" /> <To ID="107" Port="1" /> </Wire>
+      <Wire> <From ID="107" Port="1" /> <To ID="108" Port="0" /> </Wire>
+      <Wire> <From ID="103" Port="2" /> <To ID="108" Port="1" /> </Wire>
+      <Wire> <From ID="101" Port="1" /> <To ID="109" Port="0" /> </Wire>
+      <Wire> <From ID="106" Port="2" /> <To ID="109" Port="1" /> </Wire>
+      <Wire> <From ID="102" Port="0" /> <To ID="1010" Port="0" /> </Wire>
+      <Wire> <From ID="107" Port="0" /> <To ID="1011" Port="0" /> </Wire>
+      <Wire> <From ID="106" Port="0" /> <To ID="1012" Port="0" /> </Wire>
+      <Wire> <From ID="10164" Port="0" /> <To ID="1012" Port="1" /> </Wire>
+      <Wire> <From ID="10165" Port="1" /> <To ID="1012" Port="2" /> </Wire>
+      <Wire> <From ID="106" Port="1" /> <To ID="1013" Port="0" /> </Wire>
+      <Wire> <From ID="1014" Port="2" /> <To ID="1013" Port="1" /> </Wire>
+      <Wire> <From ID="104" Port="1" /> <To ID="1014" Port="0" /> </Wire>
+      <Wire> <From ID="10150" Port="3" /> <To ID="1014" Port="1" /> </Wire>
+      <Wire> <From ID="109" Port="1" /> <To ID="1015" Port="0" /> </Wire>
+      <Wire> <From ID="1013" Port="2" /> <To ID="1015" Port="1" /> </Wire>
+      <Wire> <From ID="104" Port="0" /> <To ID="1016" Port="0" /> </Wire>
+      <Wire> <From ID="109" Port="0" /> <To ID="1017" Port="0" /> </Wire>
+      <Wire> <From ID="10163" Port="0" /> <To ID="1017" Port="1" /> </Wire>
+      <Wire> <From ID="10166" Port="1" /> <To ID="1017" Port="2" /> </Wire>
+      <Wire> <From ID="1012" Port="0" /> <To ID="1018" Port="0" /> </Wire>
+      <Wire> <From ID="1020" Port="1" /> <To ID="1019" Port="0" /> </Wire>
+      <Wire> <From ID="1023" Port="2" /> <To ID="1019" Port="1" /> </Wire>
+      <Wire> <From ID="10149" Port="3" /> <To ID="1020" Port="0" /> </Wire>
+      <Wire> <From ID="1022" Port="2" /> <To ID="1020" Port="1" /> </Wire>
+      <Wire> <From ID="1023" Port="1" /> <To ID="1021" Port="0" /> </Wire>
+      <Wire> <From ID="109" Port="2" /> <To ID="1021" Port="1" /> </Wire>
+      <Wire> <From ID="10149" Port="4" /> <To ID="1022" Port="0" /> </Wire>
+      <Wire> <From ID="105" Port="2" /> <To ID="1022" Port="1" /> </Wire>
+      <Wire> <From ID="1022" Port="1" /> <To ID="1023" Port="0" /> </Wire>
+      <Wire> <From ID="101" Port="2" /> <To ID="1023" Port="1" /> </Wire>
+      <Wire> <From ID="1019" Port="1" /> <To ID="1024" Port="0" /> </Wire>
+      <Wire> <From ID="1021" Port="2" /> <To ID="1024" Port="1" /> </Wire>
+      <Wire> <From ID="105" Port="0" /> <To ID="1025" Port="0" /> </Wire>
+      <Wire> <From ID="1022" Port="0" /> <To ID="1026" Port="0" /> </Wire>
+      <Wire> <From ID="1021" Port="0" /> <To ID="1027" Port="0" /> </Wire>
+      <Wire> <From ID="10162" Port="0" /> <To ID="1027" Port="1" /> </Wire>
+      <Wire> <From ID="10167" Port="1" /> <To ID="1027" Port="2" /> </Wire>
+      <Wire> <From ID="1021" Port="1" /> <To ID="1028" Port="0" /> </Wire>
+      <Wire> <From ID="1015" Port="2" /> <To ID="1028" Port="1" /> </Wire>
+      <Wire> <From ID="1024" Port="1" /> <To ID="1029" Port="0" /> </Wire>
+      <Wire> <From ID="1028" Port="2" /> <To ID="1029" Port="1" /> </Wire>
+      <Wire> <From ID="1017" Port="0" /> <To ID="1030" Port="0" /> </Wire>
+      <Wire> <From ID="1024" Port="0" /> <To ID="1031" Port="0" /> </Wire>
+      <Wire> <From ID="10161" Port="0" /> <To ID="1031" Port="1" /> </Wire>
+      <Wire> <From ID="10168" Port="1" /> <To ID="1031" Port="2" /> </Wire>
+      <Wire> <From ID="1027" Port="0" /> <To ID="1032" Port="0" /> </Wire>
+      <Wire> <From ID="1013" Port="0" /> <To ID="1033" Port="0" /> </Wire>
+      <Wire> <From ID="1016" Port="0" /> <To ID="1033" Port="1" /> </Wire>
+      <Wire> <From ID="1012" Port="1" /> <To ID="1033" Port="2" /> </Wire>
+      <Wire> <From ID="1013" Port="1" /> <To ID="1034" Port="0" /> </Wire>
+      <Wire> <From ID="1035" Port="2" /> <To ID="1034" Port="1" /> </Wire>
+      <Wire> <From ID="1014" Port="1" /> <To ID="1035" Port="0" /> </Wire>
+      <Wire> <From ID="10150" Port="4" /> <To ID="1035" Port="1" /> </Wire>
+      <Wire> <From ID="1015" Port="1" /> <To ID="1036" Port="0" /> </Wire>
+      <Wire> <From ID="1034" Port="2" /> <To ID="1036" Port="1" /> </Wire>
+      <Wire> <From ID="1014" Port="0" /> <To ID="1037" Port="0" /> </Wire>
+      <Wire> <From ID="1015" Port="0" /> <To ID="1038" Port="0" /> </Wire>
+      <Wire> <From ID="1018" Port="0" /> <To ID="1038" Port="1" /> </Wire>
+      <Wire> <From ID="1017" Port="1" /> <To ID="1038" Port="2" /> </Wire>
+      <Wire> <From ID="1033" Port="0" /> <To ID="1039" Port="0" /> </Wire>
+      <Wire> <From ID="1034" Port="0" /> <To ID="1040" Port="0" /> </Wire>
+      <Wire> <From ID="1037" Port="0" /> <To ID="1040" Port="1" /> </Wire>
+      <Wire> <From ID="1033" Port="1" /> <To ID="1040" Port="2" /> </Wire>
+      <Wire> <From ID="1034" Port="1" /> <To ID="1041" Port="0" /> </Wire>
+      <Wire> <From ID="1042" Port="2" /> <To ID="1041" Port="1" /> </Wire>
+      <Wire> <From ID="1035" Port="1" /> <To ID="1042" Port="0" /> </Wire>
+      <Wire> <From ID="10150" Port="5" /> <To ID="1042" Port="1" /> </Wire>
+      <Wire> <From ID="1036" Port="1" /> <To ID="1043" Port="0" /> </Wire>
+      <Wire> <From ID="1041" Port="2" /> <To ID="1043" Port="1" /> </Wire>
+      <Wire> <From ID="1035" Port="0" /> <To ID="1044" Port="0" /> </Wire>
+      <Wire> <From ID="1036" Port="0" /> <To ID="1045" Port="0" /> </Wire>
+      <Wire> <From ID="1039" Port="0" /> <To ID="1045" Port="1" /> </Wire>
+      <Wire> <From ID="1038" Port="1" /> <To ID="1045" Port="2" /> </Wire>
+      <Wire> <From ID="1040" Port="0" /> <To ID="1046" Port="0" /> </Wire>
+      <Wire> <From ID="1028" Port="0" /> <To ID="1047" Port="0" /> </Wire>
+      <Wire> <From ID="1030" Port="0" /> <To ID="1047" Port="1" /> </Wire>
+      <Wire> <From ID="1027" Port="1" /> <To ID="1047" Port="2" /> </Wire>
+      <Wire> <From ID="1028" Port="1" /> <To ID="1048" Port="0" /> </Wire>
+      <Wire> <From ID="1036" Port="2" /> <To ID="1048" Port="1" /> </Wire>
+      <Wire> <From ID="1029" Port="1" /> <To ID="1049" Port="0" /> </Wire>
+      <Wire> <From ID="1048" Port="2" /> <To ID="1049" Port="1" /> </Wire>
+      <Wire> <From ID="1038" Port="0" /> <To ID="1050" Port="0" /> </Wire>
+      <Wire> <From ID="1029" Port="0" /> <To ID="1051" Port="0" /> </Wire>
+      <Wire> <From ID="1032" Port="0" /> <To ID="1051" Port="1" /> </Wire>
+      <Wire> <From ID="1031" Port="1" /> <To ID="1051" Port="2" /> </Wire>
+      <Wire> <From ID="1047" Port="0" /> <To ID="1052" Port="0" /> </Wire>
+      <Wire> <From ID="1048" Port="0" /> <To ID="1053" Port="0" /> </Wire>
+      <Wire> <From ID="1050" Port="0" /> <To ID="1053" Port="1" /> </Wire>
+      <Wire> <From ID="1047" Port="1" /> <To ID="1053" Port="2" /> </Wire>
+      <Wire> <From ID="1048" Port="1" /> <To ID="1054" Port="0" /> </Wire>
+      <Wire> <From ID="1043" Port="2" /> <To ID="1054" Port="1" /> </Wire>
+      <Wire> <From ID="1049" Port="1" /> <To ID="1055" Port="0" /> </Wire>
+      <Wire> <From ID="1054" Port="2" /> <To ID="1055" Port="1" /> </Wire>
+      <Wire> <From ID="1045" Port="0" /> <To ID="1056" Port="0" /> </Wire>
+      <Wire> <From ID="1049" Port="0" /> <To ID="1057" Port="0" /> </Wire>
+      <Wire> <From ID="1052" Port="0" /> <To ID="1057" Port="1" /> </Wire>
+      <Wire> <From ID="1051" Port="1" /> <To ID="1057" Port="2" /> </Wire>
+      <Wire> <From ID="1053" Port="0" /> <To ID="1058" Port="0" /> </Wire>
+      <Wire> <From ID="1060" Port="1" /> <To ID="1059" Port="0" /> </Wire>
+      <Wire> <From ID="1063" Port="2" /> <To ID="1059" Port="1" /> </Wire>
+      <Wire> <From ID="10149" Port="1" /> <To ID="1060" Port="0" /> </Wire>
+      <Wire> <From ID="1062" Port="2" /> <To ID="1060" Port="1" /> </Wire>
+      <Wire> <From ID="1063" Port="1" /> <To ID="1061" Port="0" /> </Wire>
+      <Wire> <From ID="1024" Port="2" /> <To ID="1061" Port="1" /> </Wire>
+      <Wire> <From ID="10149" Port="2" /> <To ID="1062" Port="0" /> </Wire>
+      <Wire> <From ID="1020" Port="2" /> <To ID="1062" Port="1" /> </Wire>
+      <Wire> <From ID="1062" Port="1" /> <To ID="1063" Port="0" /> </Wire>
+      <Wire> <From ID="1019" Port="2" /> <To ID="1063" Port="1" /> </Wire>
+      <Wire> <From ID="1059" Port="1" /> <To ID="1064" Port="0" /> </Wire>
+      <Wire> <From ID="1061" Port="2" /> <To ID="1064" Port="1" /> </Wire>
+      <Wire> <From ID="1020" Port="0" /> <To ID="1065" Port="0" /> </Wire>
+      <Wire> <From ID="1062" Port="0" /> <To ID="1066" Port="0" /> </Wire>
+      <Wire> <From ID="1061" Port="0" /> <To ID="1067" Port="0" /> </Wire>
+      <Wire> <From ID="10160" Port="0" /> <To ID="1067" Port="1" /> </Wire>
+      <Wire> <From ID="10169" Port="1" /> <To ID="1067" Port="2" /> </Wire>
+      <Wire> <From ID="1061" Port="1" /> <To ID="1068" Port="0" /> </Wire>
+      <Wire> <From ID="1029" Port="2" /> <To ID="1068" Port="1" /> </Wire>
+      <Wire> <From ID="1064" Port="1" /> <To ID="1069" Port="0" /> </Wire>
+      <Wire> <From ID="1068" Port="2" /> <To ID="1069" Port="1" /> </Wire>
+      <Wire> <From ID="1031" Port="0" /> <To ID="1070" Port="0" /> </Wire>
+      <Wire> <From ID="1064" Port="0" /> <To ID="1071" Port="0" /> </Wire>
+      <Wire> <From ID="10159" Port="0" /> <To ID="1071" Port="1" /> </Wire>
+      <Wire> <From ID="10170" Port="1" /> <To ID="1071" Port="2" /> </Wire>
+      <Wire> <From ID="1067" Port="0" /> <To ID="1072" Port="0" /> </Wire>
+      <Wire> <From ID="1075" Port="1" /> <To ID="1073" Port="0" /> </Wire>
+      <Wire> <From ID="1064" Port="2" /> <To ID="1073" Port="1" /> </Wire>
+      <Wire> <From ID="10149" Port="0" /> <To ID="1074" Port="0" /> </Wire>
+      <Wire> <From ID="1060" Port="2" /> <To ID="1074" Port="1" /> </Wire>
+      <Wire> <From ID="1074" Port="1" /> <To ID="1075" Port="0" /> </Wire>
+      <Wire> <From ID="1059" Port="2" /> <To ID="1075" Port="1" /> </Wire>
+      <Wire> <From ID="1060" Port="0" /> <To ID="1076" Port="0" /> </Wire>
+      <Wire> <From ID="1073" Port="0" /> <To ID="1077" Port="0" /> </Wire>
+      <Wire> <From ID="10158" Port="0" /> <To ID="1077" Port="1" /> </Wire>
+      <Wire> <From ID="10171" Port="1" /> <To ID="1077" Port="2" /> </Wire>
+      <Wire> <From ID="1073" Port="1" /> <To ID="1078" Port="0" /> </Wire>
+      <Wire> <From ID="1069" Port="2" /> <To ID="1078" Port="1" /> </Wire>
+      <Wire> <From ID="1071" Port="0" /> <To ID="1079" Port="0" /> </Wire>
+      <Wire> <From ID="1068" Port="0" /> <To ID="1080" Port="0" /> </Wire>
+      <Wire> <From ID="1070" Port="0" /> <To ID="1080" Port="1" /> </Wire>
+      <Wire> <From ID="1067" Port="1" /> <To ID="1080" Port="2" /> </Wire>
+      <Wire> <From ID="1068" Port="1" /> <To ID="1081" Port="0" /> </Wire>
+      <Wire> <From ID="1049" Port="2" /> <To ID="1081" Port="1" /> </Wire>
+      <Wire> <From ID="1069" Port="1" /> <To ID="1082" Port="0" /> </Wire>
+      <Wire> <From ID="1081" Port="2" /> <To ID="1082" Port="1" /> </Wire>
+      <Wire> <From ID="1051" Port="0" /> <To ID="1083" Port="0" /> </Wire>
+      <Wire> <From ID="1069" Port="0" /> <To ID="1084" Port="0" /> </Wire>
+      <Wire> <From ID="1072" Port="0" /> <To ID="1084" Port="1" /> </Wire>
+      <Wire> <From ID="1071" Port="1" /> <To ID="1084" Port="2" /> </Wire>
+      <Wire> <From ID="1080" Port="0" /> <To ID="1085" Port="0" /> </Wire>
+      <Wire> <From ID="1081" Port="0" /> <To ID="1086" Port="0" /> </Wire>
+      <Wire> <From ID="1083" Port="0" /> <To ID="1086" Port="1" /> </Wire>
+      <Wire> <From ID="1080" Port="1" /> <To ID="1086" Port="2" /> </Wire>
+      <Wire> <From ID="1081" Port="1" /> <To ID="1087" Port="0" /> </Wire>
+      <Wire> <From ID="1055" Port="2" /> <To ID="1087" Port="1" /> </Wire>
+      <Wire> <From ID="1082" Port="1" /> <To ID="1088" Port="0" /> </Wire>
+      <Wire> <From ID="1087" Port="2" /> <To ID="1088" Port="1" /> </Wire>
+      <Wire> <From ID="1057" Port="0" /> <To ID="1089" Port="0" /> </Wire>
+      <Wire> <From ID="1082" Port="0" /> <To ID="1090" Port="0" /> </Wire>
+      <Wire> <From ID="1085" Port="0" /> <To ID="1090" Port="1" /> </Wire>
+      <Wire> <From ID="1084" Port="1" /> <To ID="1090" Port="2" /> </Wire>
+      <Wire> <From ID="1086" Port="0" /> <To ID="1091" Port="0" /> </Wire>
+      <Wire> <From ID="1078" Port="0" /> <To ID="1092" Port="0" /> </Wire>
+      <Wire> <From ID="1079" Port="0" /> <To ID="1092" Port="1" /> </Wire>
+      <Wire> <From ID="1077" Port="1" /> <To ID="1092" Port="2" /> </Wire>
+      <Wire> <From ID="1078" Port="1" /> <To ID="1093" Port="0" /> </Wire>
+      <Wire> <From ID="1082" Port="2" /> <To ID="1093" Port="1" /> </Wire>
+      <Wire> <From ID="1084" Port="0" /> <To ID="1094" Port="0" /> </Wire>
+      <Wire> <From ID="1093" Port="0" /> <To ID="1095" Port="0" /> </Wire>
+      <Wire> <From ID="1094" Port="0" /> <To ID="1095" Port="1" /> </Wire>
+      <Wire> <From ID="1092" Port="1" /> <To ID="1095" Port="2" /> </Wire>
+      <Wire> <From ID="1093" Port="1" /> <To ID="1096" Port="0" /> </Wire>
+      <Wire> <From ID="1088" Port="2" /> <To ID="1096" Port="1" /> </Wire>
+      <Wire> <From ID="1090" Port="0" /> <To ID="1097" Port="0" /> </Wire>
+      <Wire> <From ID="1041" Port="0" /> <To ID="1098" Port="0" /> </Wire>
+      <Wire> <From ID="1044" Port="0" /> <To ID="1098" Port="1" /> </Wire>
+      <Wire> <From ID="1040" Port="1" /> <To ID="1098" Port="2" /> </Wire>
+      <Wire> <From ID="1041" Port="1" /> <To ID="1099" Port="0" /> </Wire>
+      <Wire> <From ID="10100" Port="2" /> <To ID="1099" Port="1" /> </Wire>
+      <Wire> <From ID="1042" Port="1" /> <To ID="10100" Port="0" /> </Wire>
+      <Wire> <From ID="10150" Port="6" /> <To ID="10100" Port="1" /> </Wire>
+      <Wire> <From ID="1043" Port="1" /> <To ID="10101" Port="0" /> </Wire>
+      <Wire> <From ID="1099" Port="2" /> <To ID="10101" Port="1" /> </Wire>
+      <Wire> <From ID="1042" Port="0" /> <To ID="10102" Port="0" /> </Wire>
+      <Wire> <From ID="1043" Port="0" /> <To ID="10103" Port="0" /> </Wire>
+      <Wire> <From ID="1046" Port="0" /> <To ID="10103" Port="1" /> </Wire>
+      <Wire> <From ID="1045" Port="1" /> <To ID="10103" Port="2" /> </Wire>
+      <Wire> <From ID="1098" Port="0" /> <To ID="10104" Port="0" /> </Wire>
+      <Wire> <From ID="1099" Port="0" /> <To ID="10105" Port="0" /> </Wire>
+      <Wire> <From ID="10102" Port="0" /> <To ID="10105" Port="1" /> </Wire>
+      <Wire> <From ID="1098" Port="1" /> <To ID="10105" Port="2" /> </Wire>
+      <Wire> <From ID="1099" Port="1" /> <To ID="10106" Port="0" /> </Wire>
+      <Wire> <From ID="10107" Port="1" /> <To ID="10106" Port="1" /> </Wire>
+      <Wire> <From ID="10100" Port="1" /> <To ID="10107" Port="0" /> </Wire>
+      <Wire> <From ID="10150" Port="7" /> <To ID="10107" Port="1" /> </Wire>
+      <Wire> <From ID="10101" Port="1" /> <To ID="10108" Port="0" /> </Wire>
+      <Wire> <From ID="10106" Port="1" /> <To ID="10108" Port="1" /> </Wire>
+      <Wire> <From ID="10100" Port="0" /> <To ID="10109" Port="0" /> </Wire>
+      <Wire> <From ID="10101" Port="0" /> <To ID="10110" Port="0" /> </Wire>
+      <Wire> <From ID="10104" Port="0" /> <To ID="10110" Port="1" /> </Wire>
+      <Wire> <From ID="10103" Port="1" /> <To ID="10110" Port="2" /> </Wire>
+      <Wire> <From ID="10105" Port="0" /> <To ID="10111" Port="0" /> </Wire>
+      <Wire> <From ID="1054" Port="0" /> <To ID="10112" Port="0" /> </Wire>
+      <Wire> <From ID="1056" Port="0" /> <To ID="10112" Port="1" /> </Wire>
+      <Wire> <From ID="1053" Port="1" /> <To ID="10112" Port="2" /> </Wire>
+      <Wire> <From ID="1054" Port="1" /> <To ID="10113" Port="0" /> </Wire>
+      <Wire> <From ID="10101" Port="2" /> <To ID="10113" Port="1" /> </Wire>
+      <Wire> <From ID="1055" Port="1" /> <To ID="10114" Port="0" /> </Wire>
+      <Wire> <From ID="10113" Port="2" /> <To ID="10114" Port="1" /> </Wire>
+      <Wire> <From ID="10103" Port="0" /> <To ID="10115" Port="0" /> </Wire>
+      <Wire> <From ID="1055" Port="0" /> <To ID="10116" Port="0" /> </Wire>
+      <Wire> <From ID="1058" Port="0" /> <To ID="10116" Port="1" /> </Wire>
+      <Wire> <From ID="1057" Port="1" /> <To ID="10116" Port="2" /> </Wire>
+      <Wire> <From ID="10112" Port="0" /> <To ID="10117" Port="0" /> </Wire>
+      <Wire> <From ID="10113" Port="0" /> <To ID="10118" Port="0" /> </Wire>
+      <Wire> <From ID="10115" Port="0" /> <To ID="10118" Port="1" /> </Wire>
+      <Wire> <From ID="10112" Port="1" /> <To ID="10118" Port="2" /> </Wire>
+      <Wire> <From ID="10113" Port="1" /> <To ID="10119" Port="0" /> </Wire>
+      <Wire> <From ID="10108" Port="1" /> <To ID="10119" Port="1" /> </Wire>
+      <Wire> <From ID="10114" Port="1" /> <To ID="10120" Port="0" /> </Wire>
+      <Wire> <From ID="10119" Port="1" /> <To ID="10120" Port="1" /> </Wire>
+      <Wire> <From ID="10110" Port="0" /> <To ID="10121" Port="0" /> </Wire>
+      <Wire> <From ID="10114" Port="0" /> <To ID="10122" Port="0" /> </Wire>
+      <Wire> <From ID="10117" Port="0" /> <To ID="10122" Port="1" /> </Wire>
+      <Wire> <From ID="10116" Port="1" /> <To ID="10122" Port="2" /> </Wire>
+      <Wire> <From ID="10118" Port="0" /> <To ID="10123" Port="0" /> </Wire>
+      <Wire> <From ID="10106" Port="0" /> <To ID="10124" Port="0" /> </Wire>
+      <Wire> <From ID="10109" Port="0" /> <To ID="10124" Port="1" /> </Wire>
+      <Wire> <From ID="10105" Port="1" /> <To ID="10124" Port="2" /> </Wire>
+      <Wire> <From ID="10108" Port="0" /> <To ID="10125" Port="0" /> </Wire>
+      <Wire> <From ID="10111" Port="0" /> <To ID="10125" Port="1" /> </Wire>
+      <Wire> <From ID="10110" Port="1" /> <To ID="10125" Port="2" /> </Wire>
+      <Wire> <From ID="10119" Port="0" /> <To ID="10126" Port="0" /> </Wire>
+      <Wire> <From ID="10121" Port="0" /> <To ID="10126" Port="1" /> </Wire>
+      <Wire> <From ID="10118" Port="1" /> <To ID="10126" Port="2" /> </Wire>
+      <Wire> <From ID="10120" Port="0" /> <To ID="10127" Port="0" /> </Wire>
+      <Wire> <From ID="10123" Port="0" /> <To ID="10127" Port="1" /> </Wire>
+      <Wire> <From ID="10122" Port="1" /> <To ID="10127" Port="2" /> </Wire>
+      <Wire> <From ID="1087" Port="0" /> <To ID="10128" Port="0" /> </Wire>
+      <Wire> <From ID="1089" Port="0" /> <To ID="10128" Port="1" /> </Wire>
+      <Wire> <From ID="1086" Port="1" /> <To ID="10128" Port="2" /> </Wire>
+      <Wire> <From ID="1087" Port="1" /> <To ID="10129" Port="0" /> </Wire>
+      <Wire> <From ID="10114" Port="2" /> <To ID="10129" Port="1" /> </Wire>
+      <Wire> <From ID="1088" Port="1" /> <To ID="10130" Port="0" /> </Wire>
+      <Wire> <From ID="10129" Port="2" /> <To ID="10130" Port="1" /> </Wire>
+      <Wire> <From ID="10116" Port="0" /> <To ID="10131" Port="0" /> </Wire>
+      <Wire> <From ID="1088" Port="0" /> <To ID="10132" Port="0" /> </Wire>
+      <Wire> <From ID="1091" Port="0" /> <To ID="10132" Port="1" /> </Wire>
+      <Wire> <From ID="1090" Port="1" /> <To ID="10132" Port="2" /> </Wire>
+      <Wire> <From ID="10128" Port="0" /> <To ID="10133" Port="0" /> </Wire>
+      <Wire> <From ID="10129" Port="0" /> <To ID="10134" Port="0" /> </Wire>
+      <Wire> <From ID="10131" Port="0" /> <To ID="10134" Port="1" /> </Wire>
+      <Wire> <From ID="10128" Port="1" /> <To ID="10134" Port="2" /> </Wire>
+      <Wire> <From ID="10129" Port="1" /> <To ID="10135" Port="0" /> </Wire>
+      <Wire> <From ID="10120" Port="1" /> <To ID="10135" Port="1" /> </Wire>
+      <Wire> <From ID="10130" Port="1" /> <To ID="10136" Port="0" /> </Wire>
+      <Wire> <From ID="10135" Port="1" /> <To ID="10136" Port="1" /> </Wire>
+      <Wire> <From ID="10122" Port="0" /> <To ID="10137" Port="0" /> </Wire>
+      <Wire> <From ID="10130" Port="0" /> <To ID="10138" Port="0" /> </Wire>
+      <Wire> <From ID="10133" Port="0" /> <To ID="10138" Port="1" /> </Wire>
+      <Wire> <From ID="10132" Port="1" /> <To ID="10138" Port="2" /> </Wire>
+      <Wire> <From ID="10134" Port="0" /> <To ID="10139" Port="0" /> </Wire>
+      <Wire> <From ID="1096" Port="0" /> <To ID="10140" Port="0" /> </Wire>
+      <Wire> <From ID="1097" Port="0" /> <To ID="10140" Port="1" /> </Wire>
+      <Wire> <From ID="1095" Port="1" /> <To ID="10140" Port="2" /> </Wire>
+      <Wire> <From ID="1096" Port="1" /> <To ID="10141" Port="0" /> </Wire>
+      <Wire> <From ID="10130" Port="2" /> <To ID="10141" Port="1" /> </Wire>
+      <Wire> <From ID="10132" Port="0" /> <To ID="10142" Port="0" /> </Wire>
+      <Wire> <From ID="10141" Port="0" /> <To ID="10143" Port="0" /> </Wire>
+      <Wire> <From ID="10142" Port="0" /> <To ID="10143" Port="1" /> </Wire>
+      <Wire> <From ID="10140" Port="1" /> <To ID="10143" Port="2" /> </Wire>
+      <Wire> <From ID="10141" Port="1" /> <To ID="10144" Port="1" /> </Wire>
+      <Wire> <From ID="10136" Port="1" /> <To ID="10144" Port="0" /> </Wire>
+      <Wire> <From ID="10138" Port="0" /> <To ID="10145" Port="0" /> </Wire>
+      <Wire> <From ID="10135" Port="0" /> <To ID="10146" Port="0" /> </Wire>
+      <Wire> <From ID="10137" Port="0" /> <To ID="10146" Port="1" /> </Wire>
+      <Wire> <From ID="10134" Port="1" /> <To ID="10146" Port="2" /> </Wire>
+      <Wire> <From ID="10136" Port="0" /> <To ID="10147" Port="0" /> </Wire>
+      <Wire> <From ID="10139" Port="0" /> <To ID="10147" Port="1" /> </Wire>
+      <Wire> <From ID="10138" Port="1" /> <To ID="10147" Port="2" /> </Wire>
+      <Wire> <From ID="10144" Port="0" /> <To ID="10148" Port="0" /> </Wire>
+      <Wire> <From ID="10145" Port="0" /> <To ID="10148" Port="1" /> </Wire>
+      <Wire> <From ID="10143" Port="1" /> <To ID="10148" Port="2" /> </Wire>
+      <Wire> <From ID="10124" Port="0" /> <To ID="10151" Port="0" /> </Wire>
+      <Wire> <From ID="10125" Port="1" /> <To ID="10151" Port="1" /> </Wire>
+      <Wire> <From ID="10152" Port="1" /> <To ID="10151" Port="2" /> </Wire>
+      <Wire> <From ID="10125" Port="0" /> <To ID="10152" Port="0" /> </Wire>
+      <Wire> <From ID="10126" Port="1" /> <To ID="10152" Port="1" /> </Wire>
+      <Wire> <From ID="10153" Port="1" /> <To ID="10152" Port="2" /> </Wire>
+      <Wire> <From ID="10126" Port="0" /> <To ID="10153" Port="0" /> </Wire>
+      <Wire> <From ID="10127" Port="1" /> <To ID="10153" Port="1" /> </Wire>
+      <Wire> <From ID="10154" Port="1" /> <To ID="10153" Port="2" /> </Wire>
+      <Wire> <From ID="10127" Port="0" /> <To ID="10154" Port="0" /> </Wire>
+      <Wire> <From ID="10146" Port="1" /> <To ID="10154" Port="1" /> </Wire>
+      <Wire> <From ID="10155" Port="1" /> <To ID="10154" Port="2" /> </Wire>
+      <Wire> <From ID="10146" Port="0" /> <To ID="10155" Port="0" /> </Wire>
+      <Wire> <From ID="10147" Port="1" /> <To ID="10155" Port="1" /> </Wire>
+      <Wire> <From ID="10172" Port="1" /> <To ID="10155" Port="2" /> </Wire>
+      <Wire> <From ID="10107" Port="0" /> <To ID="10156" Port="0" /> </Wire>
+      <Wire> <From ID="10124" Port="1" /> <To ID="10156" Port="1" /> </Wire>
+      <Wire> <From ID="10151" Port="1" /> <To ID="10156" Port="2" /> </Wire>
+      <Wire> <From ID="1074" Port="0" /> <To ID="10157" Port="0" /> </Wire>
+      <Wire> <From ID="10170" Port="0" /> <To ID="10158" Port="0" /> </Wire>
+      <Wire> <From ID="10169" Port="0" /> <To ID="10159" Port="0" /> </Wire>
+      <Wire> <From ID="10168" Port="0" /> <To ID="10160" Port="0" /> </Wire>
+      <Wire> <From ID="10167" Port="0" /> <To ID="10161" Port="0" /> </Wire>
+      <Wire> <From ID="10166" Port="0" /> <To ID="10162" Port="0" /> </Wire>
+      <Wire> <From ID="10165" Port="0" /> <To ID="10163" Port="0" /> </Wire>
+      <Wire> <From ID="103" Port="0" /> <To ID="10164" Port="0" /> </Wire>
+      <Wire> <From ID="108" Port="0" /> <To ID="10165" Port="0" /> </Wire>
+      <Wire> <From ID="1010" Port="0" /> <To ID="10165" Port="1" /> </Wire>
+      <Wire> <From ID="101" Port="0" /> <To ID="10166" Port="0" /> </Wire>
+      <Wire> <From ID="1011" Port="0" /> <To ID="10166" Port="1" /> </Wire>
+      <Wire> <From ID="1023" Port="0" /> <To ID="10167" Port="0" /> </Wire>
+      <Wire> <From ID="1025" Port="0" /> <To ID="10167" Port="1" /> </Wire>
+      <Wire> <From ID="1019" Port="0" /> <To ID="10168" Port="0" /> </Wire>
+      <Wire> <From ID="1026" Port="0" /> <To ID="10168" Port="1" /> </Wire>
+      <Wire> <From ID="1063" Port="0" /> <To ID="10169" Port="0" /> </Wire>
+      <Wire> <From ID="1065" Port="0" /> <To ID="10169" Port="1" /> </Wire>
+      <Wire> <From ID="1059" Port="0" /> <To ID="10170" Port="0" /> </Wire>
+      <Wire> <From ID="1066" Port="0" /> <To ID="10170" Port="1" /> </Wire>
+      <Wire> <From ID="1075" Port="0" /> <To ID="10171" Port="0" /> </Wire>
+      <Wire> <From ID="1076" Port="0" /> <To ID="10171" Port="1" /> </Wire>
+      <Wire> <From ID="10147" Port="0" /> <To ID="10172" Port="0" /> </Wire>
+      <Wire> <From ID="10148" Port="1" /> <To ID="10172" Port="1" /> </Wire>
+    </Wires>
+  </Circuit>
+</CircuitGroup>

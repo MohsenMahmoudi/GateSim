@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="c78a8791-4871-4e75-a651-96e2a8cee832" name="skollmansberger@34106C00 2011-06-14 18:24:04" runUser="ICS\skollmansberger" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local Test Run" id="6caf6ee0-cb9b-4aff-8baf-32066a248ae9">
+    <Description>This is a default test run configuration for a local test run.</Description>
+    <Deployment runDeploymentRoot="skollmansberger_34106C00 2011-06-14 18_24_04">
+      <DeploymentItem filename="C:\Users\skollmansberger\Desktop\GateSim\Gates\bin\Release\Gates.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2011-06-14T18:24:04.0801295-07:00" queuing="2011-06-14T18:24:05.3392554-07:00" start="2011-06-14T18:24:05.4412656-07:00" finish="2011-06-14T18:24:38.4295641-07:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="35" executed="35" passed="35" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="DefaultTTGenerator" storage="c:\users\skollmansberger\desktop\gatesim\gatestest\bin\release\gatestest.dll" id="bd9dccc8-4986-be2a-a5f7-e28b1c11b07f">
+      <Execution id="d0e7702d-bc8f-43ac-ad46-57c40dfc4241" />
+      <TestMethod codeBase="C:/Users/skollmansberger/Desktop/GateSim/GatesTest/bin/Release/GatesTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="GatesTest.TruthTableTest, GatesTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="DefaultTTGenerator" />
+    </UnitTest>
+    <UnitTest name="ThreeInputNOr" storage="c:\users\skollmansberger\desktop\gatesim\gatestest\bin\release\gatestest.dll" id="c0a6b371-51b0-676b-e40d-733c9765f852">
+      <Execution id="36d62580-0f53-4d54-a36c-f6932dd52fc0" />
+      <TestMethod codeBase="C:/Users/skollmansberger/Desktop/GateSim/GatesTest/bin/Release/GatesTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="GatesTest.BasicGatesTest, GatesTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ThreeInputNOr" />
+    </UnitTest>
+    <UnitTest name="Not" storage="c:\users\skollmansberger\desktop\gatesim\gatestest\bin\release\gatestest.dll" id="3fecf0c2-61a0-aa29-3745-3afca440993e">
+      <Execution id="e97183cb-2c2e-42ea-80cd-33b33f8244e8" />
+      <TestMethod codeBase="C:/Users/skollmansberger/Desktop/GateSim/GatesTest/bin/Release/GatesTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="GatesTest.BasicGatesTest, GatesTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Not" />
+    </UnitTest>
+    <UnitTest name="ThruCircuit1" storage="c:\users\skollmansberger\desktop\gatesim\gatestest\bin\release\gatestest.dll" id="a61cb9fe-3d2e-2c30-22db-9e8fb465d87b">
+      <Execution id="1e3e3fc6-bbd1-4e1e-aa71-fe5fc118f738" />
+      <TestMethod codeBase="C:/Users/skollmansberger/Desktop/GateSim/GatesTest/bin/Release/GatesTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="GatesTest.CircuitTest, GatesTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ThruCircuit1" />
+    </UnitTest>
+    <UnitTest name="OscillationCircuit1" storage="c:\users\skollmansberger\desktop\gatesim\gatestest\bin\release\gatestest.dll" id="a61c9322-4931-ab5c-5189-49aae7d69782">
+      <Execution id="8c093f32-8031-4abb-a2ce-44c02004c948" />
+      <TestMethod codeBase="C:/Users/skollmansberger/Desktop/GateSim/GatesTest/bin/Release/GatesTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="GatesTest.CircuitTest, GatesTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="OscillationCircuit1" />
+    </UnitTest>
+    <UnitTest name="PropagationTest" storage="c:\users\skollmansberger\desktop\gatesim\gatestest\bin\release\gatestest.dll" id="45911ed5-196a-430c-6ee5-b02f349651b0">
+      <Execution id="aa6c75bd-98fc-42ca-865a-addccf8a5f86" />
+      <TestMethod codeBase="C:/Users/skollmansberger/Desktop/GateSim/GatesTest/bin/Release/GatesTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="GatesTest.ICTest, GatesTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="PropagationTest" />
+    </UnitTest>
+    <UnitTest name="SRLatch" storage="c:\users\skollmansberger\desktop\gatesim\gatestest\bin\release\gatestest.dll" id="2e2fd509-66d7-4657-954e-f474155bb3f4">
+      <Execution id="7c2e8820-d534-4939-b649-4e17a0e27eb4" />
+      <TestMethod codeBase="C:/Users/skollmansberger/Desktop/GateSim/GatesTest/bin/Release/GatesTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="GatesTest.ICTest, GatesTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SRLatch" />
+    </UnitTest>
+    <UnitTest name="Clock" storage="c:\users\skollmansberger\desktop\gatesim\gatestest\bin\release\gatestest.dll" id="7b053aae-157f-3ffe-a4a9-3248225f9f84">
+      <Execution id="281923b0-4e53-4451-b85a-8814fbce348a" />
+      <TestMethod codeBase="C:/Users/skollmansberger/Desktop/GateSim/GatesTest/bin/Release/GatesTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="GatesTest.IOGatesTest, GatesTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Clock" />
+    </UnitTest>
+    <UnitTest name="OscillationCircuit2" storage="c:\users\skollmansberger\desktop\gatesim\gatestest\bin\release\gatestest.dll" id="a3354c9d-8c9e-a97b-96c0-2fd38c6f2a6c">
+      <Execution id="0861c26d-52bd-42ba-986a-3608aed2e245" />
+      <TestMethod codeBase="C:/Users/skollmansberger/Desktop/GateSim/GatesTest/bin/Release/GatesTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="GatesTest.CircuitTest, GatesTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="OscillationCircuit2" />
+    </UnitTest>
+    <UnitTest name="NorInCiruit" storage="c:\users\skollmansberger\desktop\gatesim\gatestest\bin\release\gatestest.dll" id="1c901cd2-796c-a670-daeb-56c199af963f">
+      <Execution id="20a5d53b-077e-4e6b-a79c-dfc71c20b95d" />
+      <TestMethod codeBase="C:/Users/skollmansberger/Desktop/GateSim/GatesTest/bin/Release/GatesTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="GatesTest.ICTest, GatesTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NorInCiruit" />
+    </UnitTest>
+    <UnitTest name="NumericInput" storage="c:\users\skollmansberger\desktop\gatesim\gatestest\bin\release\gatestest.dll" id="ee04d189-c7bc-1b49-5c71-188fbcf86fb1">
+      <Execution id="5947fd72-7cd2-43c8-bdab-b0e47e305ebc" />
+      <TestMethod codeBase="C:/Users/skollmansberger/Desktop/GateSim/GatesTest/bin/Release/GatesTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="GatesTest.IOGatesTest, GatesTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericInput" />
+    </UnitTest>
+    <UnitTest name="ThreeInputOr" storage="c:\users\skollmansberger\desktop\gatesim\gatestest\bin\release\gatestest.dll" id="c0ac0706-9832-dfd4-d39c-1d96ad96da0b">
+      <Execution id="be1d7f89-85f8-4204-84ef-9ec027221959" />
+      <TestMethod codeBase="C:/Users/skollmansberger/Desktop/GateSim/GatesTest/bin/Release/GatesTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="GatesTest.BasicGatesTest, GatesTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ThreeInputOr" />
+    </UnitTest>
+    <UnitTest name="CloneTest" storage="c:\users\skollmansberger\desktop\gatesim\gatestest\bin\release\gatestest.dll" id="a9e56407-9d8a-a00f-6c09-1ddb000fdfb1">
+      <Execution id="abf03665-7fd5-402e-a60b-7cfa91b3f5ba" />
+      <TestMethod codeBase="C:/Users/skollmansberger/Desktop/GateSim/GatesTest/bin/Release/GatesTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="GatesTest.ICTest, GatesTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CloneTest" />
+    </UnitTest>
+    <UnitTest name="UserInput" storage="c:\users\skollmansberger\desktop\gatesim\gatestest\bin\release\gatestest.dll" id="8f7050fa-4e00-4b43-11f9-60c8ed5cdeb6">
+      <Execution id="46b709b8-c931-41ae-a30e-ba12e4589e33" />
+      <TestMethod codeBase="C:/Users/skollmansberger/Desktop/GateSim/GatesTest/bin/Release/GatesTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="GatesTest.IOGatesTest, GatesTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="UserInput" />
+    </UnitTest>
+    <UnitTest name="BasicTTTest" storage="c:\users\skollmansberger\desktop\gatesim\gatestest\bin\release\gatestest.dll" id="7d5723be-d61a-d96e-5329-5fe40ad2ce34">
+      <Execution id="cd95e79e-d41e-44eb-8f2b-62619105b998" />
+      <TestMethod codeBase="C:/Users/skollmansberger/Desktop/GateSim/GatesTest/bin/Release/GatesTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="GatesTest.TruthTableTest, GatesTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="BasicTTTest" />
+    </UnitTest>
+    <UnitTest name="Buffer" storage="c:\users\skollmansberger\desktop\gatesim\gatestest\bin\release\gatestest.dll" id="cec0f403-05a9-89a2-a8a5-da3b816f9a7b">
+      <Execution id="e456c599-be4e-4792-a2ad-db3916bf3346" />
+      <TestMethod codeBase="C:/Users/skollmansberger/Desktop/GateSim/GatesTest/bin/Release/GatesTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="GatesTest.BasicGatesTest, GatesTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Buffer" />
+    </UnitTest>
+    <UnitTest name="SimpleStateTTTest" storage="c:\users\skollmansberger\desktop\gatesim\gatestest\bin\release\gatestest.dll" id="e6d5a655-6197-d561-f57c-b35b1b8a7ddf">
+      <Execution id="6647bcfc-4b2b-4b13-ab2b-5759208d45a1" />
+      <TestMethod codeBase="C:/Users/skollmansberger/Desktop/GateSim/GatesTest/bin/Release/GatesTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="GatesTest.TruthTableTest, GatesTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SimpleStateTTTest" />
+    </UnitTest>
+    <UnitTest name="ThreeInputAnd" storage="c:\users\skollmansberger\desktop\gatesim\gatestest\bin\release\gatestest.dll" id="017b7294-6efb-6a29-d3fd-db04fb166005">
+      <Execution id="b7ae30b3-62e7-4c89-a982-62d657fb35ed" />
+      <TestMethod codeBase="C:/Users/skollmansberger/Desktop/GateSim/GatesTest/bin/Release/GatesTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="GatesTest.BasicGatesTest, GatesTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ThreeInputAnd" />
+    </UnitTest>
+    <UnitTest name="CloneTT" storage="c:\users\skollmansberger\desktop\gatesim\gatestest\bin\release\gatestest.dll" id="fdc200b8-d9ce-47c6-2f11-c43a5890d498">
+      <Execution id="1ee320f1-75fe-464f-b635-5bcd21560882" />
+      <TestMethod codeBase="C:/Users/skollmansberger/Desktop/GateSim/GatesTest/bin/Release/GatesTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="GatesTest.TruthTableTest, GatesTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CloneTT" />
+    </UnitTest>
+    <UnitTest name="NumericOutput1" storage="c:\users\skollmansberger\desktop\gatesim\gatestest\bin\release\gatestest.dll" id="92b62c94-1ecc-1e76-746d-6449e4bb7557">
+      <Execution id="d8df9c49-2e8c-4886-916c-317261c0b2d3" />
+      <TestMethod codeBase="C:/Users/skollmansberger/Desktop/GateSim/GatesTest/bin/Release/GatesTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="GatesTest.IOGatesTest, GatesTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericOutput1" />
+    </UnitTest>
+    <UnitTest name="Nor" storage="c:\users\skollmansberger\desktop\gatesim\gatestest\bin\release\gatestest.dll" id="b5d17332-7a60-d6bd-097e-a83d92c12fa3">
+      <Execution id="a4b9805e-5df4-4667-81f9-784fdf9551a4" />
+      <TestMethod codeBase="C:/Users/skollmansberger/Desktop/GateSim/GatesTest/bin/Release/GatesTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="GatesTest.BasicGatesTest, GatesTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Nor" />
+    </UnitTest>
+    <UnitTest name="Nor" storage="c:\users\skollmansberger\desktop\gatesim\gatestest\bin\release\gatestest.dll" id="6afd13f9-456e-e98c-c51a-a86d57c1742a">
+      <Execution id="03a0f464-24a7-4bab-84bc-9c6bf79377b3" />
+      <TestMethod codeBase="C:/Users/skollmansberger/Desktop/GateSim/GatesTest/bin/Release/GatesTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="GatesTest.ICTest, GatesTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Nor" />
+    </UnitTest>
+    <UnitTest name="Or" storage="c:\users\skollmansberger\desktop\gatesim\gatestest\bin\release\gatestest.dll" id="a09f0a1f-ad09-5c71-dc13-0b38847ba32d">
+      <Execution id="3ae6a607-9d3a-4d29-b7d7-d5777f142b2e" />
+      <TestMethod codeBase="C:/Users/skollmansberger/Desktop/GateSim/GatesTest/bin/Release/GatesTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="GatesTest.BasicGatesTest, GatesTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Or" />
+    </UnitTest>
+    <UnitTest name="UserOutput" storage="c:\users\skollmansberger\desktop\gatesim\gatestest\bin\release\gatestest.dll" id="42fc253c-5318-a0e9-4d75-b18f34b88fa2">
+      <Execution id="e42c4205-1934-4bcb-93cc-eab5d1146322" />
+      <TestMethod codeBase="C:/Users/skollmansberger/Desktop/GateSim/GatesTest/bin/Release/GatesTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="GatesTest.IOGatesTest, GatesTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="UserOutput" />
+    </UnitTest>
+    <UnitTest name="Xor" storage="c:\users\skollmansberger\desktop\gatesim\gatestest\bin\release\gatestest.dll" id="ba3ec742-86ea-7d00-e30e-fd13a26c04fa">
+      <Execution id="1b7b2bf9-4ea8-47fc-a70e-63f7e698d094" />
+      <TestMethod codeBase="C:/Users/skollmansberger/Desktop/GateSim/GatesTest/bin/Release/GatesTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="GatesTest.BasicGatesTest, GatesTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Xor" />
+    </UnitTest>
+    <UnitTest name="And" storage="c:\users\skollmansberger\desktop\gatesim\gatestest\bin\release\gatestest.dll" id="56121e84-0086-053c-0122-287dbdb85a2d">
+      <Execution id="5bce90f5-5454-4bae-826b-3f3ccfb55756" />
+      <TestMethod codeBase="C:/Users/skollmansberger/Desktop/GateSim/GatesTest/bin/Release/GatesTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="GatesTest.BasicGatesTest, GatesTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="And" />
+    </UnitTest>
+    <UnitTest name="Nand" storage="c:\users\skollmansberger\desktop\gatesim\gatestest\bin\release\gatestest.dll" id="16a7e2a0-b614-837b-1fbb-f18e12a0ebd5">
+      <Execution id="61106e95-9bfe-4056-8d7a-143eec14cc13" />
+      <TestMethod codeBase="C:/Users/skollmansberger/Desktop/GateSim/GatesTest/bin/Release/GatesTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="GatesTest.BasicGatesTest, GatesTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Nand" />
+    </UnitTest>
+    <UnitTest name="TwosComplement" storage="c:\users\skollmansberger\desktop\gatesim\gatestest\bin\release\gatestest.dll" id="41d48ff8-247a-96d2-ecc5-cb193481be3f">
+      <Execution id="e3229a7c-3d99-49ab-adc9-c1a18e230b9d" />
+      <TestMethod codeBase="C:/Users/skollmansberger/Desktop/GateSim/GatesTest/bin/Release/GatesTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="GatesTest.IOGatesTest, GatesTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TwosComplement" />
+    </UnitTest>
+    <UnitTest name="ToggleStateTTTest" storage="c:\users\skollmansberger\desktop\gatesim\gatestest\bin\release\gatestest.dll" id="c5cbbcc5-63cd-d435-5249-4550cc8eb98a">
+      <Execution id="18dd865e-c84e-456d-af43-cd9c626f3787" />
+      <TestMethod codeBase="C:/Users/skollmansberger/Desktop/GateSim/GatesTest/bin/Release/GatesTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="GatesTest.TruthTableTest, GatesTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ToggleStateTTTest" />
+    </UnitTest>
+    <UnitTest name="NumericOutput2" storage="c:\users\skollmansberger\desktop\gatesim\gatestest\bin\release\gatestest.dll" id="151b2205-5940-d29f-6b29-b248b5165ce1">
+      <Execution id="d987a71f-1cb1-45b9-8d47-c303f4e69628" />
+      <TestMethod codeBase="C:/Users/skollmansberger/Desktop/GateSim/GatesTest/bin/Release/GatesTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="GatesTest.IOGatesTest, GatesTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericOutput2" />
+    </UnitTest>
+    <UnitTest name="BCD" storage="c:\users\skollmansberger\desktop\gatesim\gatestest\bin\release\gatestest.dll" id="6997e845-ca2c-14b4-9eac-dcb441061c8e">
+      <Execution id="30a82d13-580b-4a06-a7a8-46b82509dce3" />
+      <TestMethod codeBase="C:/Users/skollmansberger/Desktop/GateSim/GatesTest/bin/Release/GatesTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="GatesTest.IOGatesTest, GatesTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="BCD" />
+    </UnitTest>
+    <UnitTest name="ThreeInputNAnd" storage="c:\users\skollmansberger\desktop\gatesim\gatestest\bin\release\gatestest.dll" id="9ba00f5a-a88f-ac70-b3de-d3eff9f6fe73">
+      <Execution id="290ad9da-d2a1-41e9-a91c-298e65567020" />
+      <TestMethod codeBase="C:/Users/skollmansberger/Desktop/GateSim/GatesTest/bin/Release/GatesTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="GatesTest.BasicGatesTest, GatesTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ThreeInputNAnd" />
+    </UnitTest>
+    <UnitTest name="BoolLinesTTTest" storage="c:\users\skollmansberger\desktop\gatesim\gatestest\bin\release\gatestest.dll" id="ea3bed15-8ee3-d2b7-56af-4080606ebadf">
+      <Execution id="03692797-9dab-4960-8721-61d53497a7f9" />
+      <TestMethod codeBase="C:/Users/skollmansberger/Desktop/GateSim/GatesTest/bin/Release/GatesTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="GatesTest.TruthTableTest, GatesTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="BoolLinesTTTest" />
+    </UnitTest>
+    <UnitTest name="ThruCircuit2" storage="c:\users\skollmansberger\desktop\gatesim\gatestest\bin\release\gatestest.dll" id="44b33bef-5d54-ea24-f90b-80432b84f8f7">
+      <Execution id="05aed019-794a-4f57-9744-89e2dfba8e8f" />
+      <TestMethod codeBase="C:/Users/skollmansberger/Desktop/GateSim/GatesTest/bin/Release/GatesTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="GatesTest.CircuitTest, GatesTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ThruCircuit2" />
+    </UnitTest>
+    <UnitTest name="Xnor" storage="c:\users\skollmansberger\desktop\gatesim\gatestest\bin\release\gatestest.dll" id="7e579029-2a08-d5dc-194f-54168813d7d7">
+      <Execution id="408f9504-87f0-4e0a-a424-25337a5e8a1d" />
+      <TestMethod codeBase="C:/Users/skollmansberger/Desktop/GateSim/GatesTest/bin/Release/GatesTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="GatesTest.BasicGatesTest, GatesTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Xnor" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="017b7294-6efb-6a29-d3fd-db04fb166005" executionId="b7ae30b3-62e7-4c89-a982-62d657fb35ed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="151b2205-5940-d29f-6b29-b248b5165ce1" executionId="d987a71f-1cb1-45b9-8d47-c303f4e69628" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="16a7e2a0-b614-837b-1fbb-f18e12a0ebd5" executionId="61106e95-9bfe-4056-8d7a-143eec14cc13" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1c901cd2-796c-a670-daeb-56c199af963f" executionId="20a5d53b-077e-4e6b-a79c-dfc71c20b95d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2e2fd509-66d7-4657-954e-f474155bb3f4" executionId="7c2e8820-d534-4939-b649-4e17a0e27eb4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3fecf0c2-61a0-aa29-3745-3afca440993e" executionId="e97183cb-2c2e-42ea-80cd-33b33f8244e8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="41d48ff8-247a-96d2-ecc5-cb193481be3f" executionId="e3229a7c-3d99-49ab-adc9-c1a18e230b9d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="42fc253c-5318-a0e9-4d75-b18f34b88fa2" executionId="e42c4205-1934-4bcb-93cc-eab5d1146322" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="44b33bef-5d54-ea24-f90b-80432b84f8f7" executionId="05aed019-794a-4f57-9744-89e2dfba8e8f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="45911ed5-196a-430c-6ee5-b02f349651b0" executionId="aa6c75bd-98fc-42ca-865a-addccf8a5f86" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="56121e84-0086-053c-0122-287dbdb85a2d" executionId="5bce90f5-5454-4bae-826b-3f3ccfb55756" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6997e845-ca2c-14b4-9eac-dcb441061c8e" executionId="30a82d13-580b-4a06-a7a8-46b82509dce3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6afd13f9-456e-e98c-c51a-a86d57c1742a" executionId="03a0f464-24a7-4bab-84bc-9c6bf79377b3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7b053aae-157f-3ffe-a4a9-3248225f9f84" executionId="281923b0-4e53-4451-b85a-8814fbce348a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7d5723be-d61a-d96e-5329-5fe40ad2ce34" executionId="cd95e79e-d41e-44eb-8f2b-62619105b998" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7e579029-2a08-d5dc-194f-54168813d7d7" executionId="408f9504-87f0-4e0a-a424-25337a5e8a1d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8f7050fa-4e00-4b43-11f9-60c8ed5cdeb6" executionId="46b709b8-c931-41ae-a30e-ba12e4589e33" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="92b62c94-1ecc-1e76-746d-6449e4bb7557" executionId="d8df9c49-2e8c-4886-916c-317261c0b2d3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9ba00f5a-a88f-ac70-b3de-d3eff9f6fe73" executionId="290ad9da-d2a1-41e9-a91c-298e65567020" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a09f0a1f-ad09-5c71-dc13-0b38847ba32d" executionId="3ae6a607-9d3a-4d29-b7d7-d5777f142b2e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a3354c9d-8c9e-a97b-96c0-2fd38c6f2a6c" executionId="0861c26d-52bd-42ba-986a-3608aed2e245" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a61c9322-4931-ab5c-5189-49aae7d69782" executionId="8c093f32-8031-4abb-a2ce-44c02004c948" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a61cb9fe-3d2e-2c30-22db-9e8fb465d87b" executionId="1e3e3fc6-bbd1-4e1e-aa71-fe5fc118f738" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a9e56407-9d8a-a00f-6c09-1ddb000fdfb1" executionId="abf03665-7fd5-402e-a60b-7cfa91b3f5ba" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b5d17332-7a60-d6bd-097e-a83d92c12fa3" executionId="a4b9805e-5df4-4667-81f9-784fdf9551a4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ba3ec742-86ea-7d00-e30e-fd13a26c04fa" executionId="1b7b2bf9-4ea8-47fc-a70e-63f7e698d094" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bd9dccc8-4986-be2a-a5f7-e28b1c11b07f" executionId="d0e7702d-bc8f-43ac-ad46-57c40dfc4241" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c0a6b371-51b0-676b-e40d-733c9765f852" executionId="36d62580-0f53-4d54-a36c-f6932dd52fc0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c0ac0706-9832-dfd4-d39c-1d96ad96da0b" executionId="be1d7f89-85f8-4204-84ef-9ec027221959" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c5cbbcc5-63cd-d435-5249-4550cc8eb98a" executionId="18dd865e-c84e-456d-af43-cd9c626f3787" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cec0f403-05a9-89a2-a8a5-da3b816f9a7b" executionId="e456c599-be4e-4792-a2ad-db3916bf3346" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e6d5a655-6197-d561-f57c-b35b1b8a7ddf" executionId="6647bcfc-4b2b-4b13-ab2b-5759208d45a1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ea3bed15-8ee3-d2b7-56af-4080606ebadf" executionId="03692797-9dab-4960-8721-61d53497a7f9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ee04d189-c7bc-1b49-5c71-188fbcf86fb1" executionId="5947fd72-7cd2-43c8-bdab-b0e47e305ebc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fdc200b8-d9ce-47c6-2f11-c43a5890d498" executionId="1ee320f1-75fe-464f-b635-5bcd21560882" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="b7ae30b3-62e7-4c89-a982-62d657fb35ed" testId="017b7294-6efb-6a29-d3fd-db04fb166005" testName="ThreeInputAnd" computerName="34106C00" duration="00:00:00.0149003" startTime="2011-06-14T18:24:05.4822697-07:00" endTime="2011-06-14T18:24:05.8713086-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b7ae30b3-62e7-4c89-a982-62d657fb35ed">
+    </UnitTestResult>
+    <UnitTestResult executionId="d987a71f-1cb1-45b9-8d47-c303f4e69628" testId="151b2205-5940-d29f-6b29-b248b5165ce1" testName="NumericOutput2" computerName="34106C00" duration="00:00:00.0103360" startTime="2011-06-14T18:24:05.8953110-07:00" endTime="2011-06-14T18:24:05.9173132-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d987a71f-1cb1-45b9-8d47-c303f4e69628">
+    </UnitTestResult>
+    <UnitTestResult executionId="61106e95-9bfe-4056-8d7a-143eec14cc13" testId="16a7e2a0-b614-837b-1fbb-f18e12a0ebd5" testName="Nand" computerName="34106C00" duration="00:00:00.0014342" startTime="2011-06-14T18:24:05.9213136-07:00" endTime="2011-06-14T18:24:05.9313146-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="61106e95-9bfe-4056-8d7a-143eec14cc13">
+    </UnitTestResult>
+    <UnitTestResult executionId="20a5d53b-077e-4e6b-a79c-dfc71c20b95d" testId="1c901cd2-796c-a670-daeb-56c199af963f" testName="NorInCiruit" computerName="34106C00" duration="00:00:00.0907245" startTime="2011-06-14T18:24:05.9383153-07:00" endTime="2011-06-14T18:24:06.0363251-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="20a5d53b-077e-4e6b-a79c-dfc71c20b95d">
+    </UnitTestResult>
+    <UnitTestResult executionId="7c2e8820-d534-4939-b649-4e17a0e27eb4" testId="2e2fd509-66d7-4657-954e-f474155bb3f4" testName="SRLatch" computerName="34106C00" duration="00:00:00.5225079" startTime="2011-06-14T18:24:06.0383253-07:00" endTime="2011-06-14T18:24:06.5683783-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7c2e8820-d534-4939-b649-4e17a0e27eb4">
+    </UnitTestResult>
+    <UnitTestResult executionId="e97183cb-2c2e-42ea-80cd-33b33f8244e8" testId="3fecf0c2-61a0-aa29-3745-3afca440993e" testName="Not" computerName="34106C00" duration="00:00:00.0003134" startTime="2011-06-14T18:24:06.5713786-07:00" endTime="2011-06-14T18:24:06.5743789-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e97183cb-2c2e-42ea-80cd-33b33f8244e8">
+    </UnitTestResult>
+    <UnitTestResult executionId="e3229a7c-3d99-49ab-adc9-c1a18e230b9d" testId="41d48ff8-247a-96d2-ecc5-cb193481be3f" testName="TwosComplement" computerName="34106C00" duration="00:00:00.0026136" startTime="2011-06-14T18:24:06.5763791-07:00" endTime="2011-06-14T18:24:06.5833798-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e3229a7c-3d99-49ab-adc9-c1a18e230b9d">
+    </UnitTestResult>
+    <UnitTestResult executionId="e42c4205-1934-4bcb-93cc-eab5d1146322" testId="42fc253c-5318-a0e9-4d75-b18f34b88fa2" testName="UserOutput" computerName="34106C00" duration="00:00:00.0002727" startTime="2011-06-14T18:24:06.5853800-07:00" endTime="2011-06-14T18:24:06.5893804-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e42c4205-1934-4bcb-93cc-eab5d1146322">
+    </UnitTestResult>
+    <UnitTestResult executionId="05aed019-794a-4f57-9744-89e2dfba8e8f" testId="44b33bef-5d54-ea24-f90b-80432b84f8f7" testName="ThruCircuit2" computerName="34106C00" duration="00:00:00.0514737" startTime="2011-06-14T18:24:06.5913806-07:00" endTime="2011-06-14T18:24:06.6463861-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="05aed019-794a-4f57-9744-89e2dfba8e8f">
+    </UnitTestResult>
+    <UnitTestResult executionId="aa6c75bd-98fc-42ca-865a-addccf8a5f86" testId="45911ed5-196a-430c-6ee5-b02f349651b0" testName="PropagationTest" computerName="34106C00" duration="00:00:00.8336891" startTime="2011-06-14T18:24:06.6483863-07:00" endTime="2011-06-14T18:24:07.4854700-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="aa6c75bd-98fc-42ca-865a-addccf8a5f86">
+    </UnitTestResult>
+    <UnitTestResult executionId="5bce90f5-5454-4bae-826b-3f3ccfb55756" testId="56121e84-0086-053c-0122-287dbdb85a2d" testName="And" computerName="34106C00" duration="00:00:00.0004674" startTime="2011-06-14T18:24:07.4884703-07:00" endTime="2011-06-14T18:24:07.4934708-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5bce90f5-5454-4bae-826b-3f3ccfb55756">
+    </UnitTestResult>
+    <UnitTestResult executionId="30a82d13-580b-4a06-a7a8-46b82509dce3" testId="6997e845-ca2c-14b4-9eac-dcb441061c8e" testName="BCD" computerName="34106C00" duration="00:00:00.0690455" startTime="2011-06-14T18:24:07.4954710-07:00" endTime="2011-06-14T18:24:07.5684783-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="30a82d13-580b-4a06-a7a8-46b82509dce3">
+    </UnitTestResult>
+    <UnitTestResult executionId="03a0f464-24a7-4bab-84bc-9c6bf79377b3" testId="6afd13f9-456e-e98c-c51a-a86d57c1742a" testName="Nor" computerName="34106C00" duration="00:00:00.1797553" startTime="2011-06-14T18:24:07.5704785-07:00" endTime="2011-06-14T18:24:07.7554970-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="03a0f464-24a7-4bab-84bc-9c6bf79377b3">
+    </UnitTestResult>
+    <UnitTestResult executionId="281923b0-4e53-4451-b85a-8814fbce348a" testId="7b053aae-157f-3ffe-a4a9-3248225f9f84" testName="Clock" computerName="34106C00" duration="00:00:10.0011926" startTime="2011-06-14T18:24:07.7574972-07:00" endTime="2011-06-14T18:24:17.7624976-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="281923b0-4e53-4451-b85a-8814fbce348a">
+    </UnitTestResult>
+    <UnitTestResult executionId="cd95e79e-d41e-44eb-8f2b-62619105b998" testId="7d5723be-d61a-d96e-5329-5fe40ad2ce34" testName="BasicTTTest" computerName="34106C00" duration="00:00:00.0286610" startTime="2011-06-14T18:24:17.7654979-07:00" endTime="2011-06-14T18:24:17.7985012-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cd95e79e-d41e-44eb-8f2b-62619105b998">
+    </UnitTestResult>
+    <UnitTestResult executionId="408f9504-87f0-4e0a-a424-25337a5e8a1d" testId="7e579029-2a08-d5dc-194f-54168813d7d7" testName="Xnor" computerName="34106C00" duration="00:00:00.0007173" startTime="2011-06-14T18:24:17.8005014-07:00" endTime="2011-06-14T18:24:17.8045018-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="408f9504-87f0-4e0a-a424-25337a5e8a1d">
+    </UnitTestResult>
+    <UnitTestResult executionId="46b709b8-c931-41ae-a30e-ba12e4589e33" testId="8f7050fa-4e00-4b43-11f9-60c8ed5cdeb6" testName="UserInput" computerName="34106C00" duration="00:00:00.0002973" startTime="2011-06-14T18:24:17.8075021-07:00" endTime="2011-06-14T18:24:17.8115025-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="46b709b8-c931-41ae-a30e-ba12e4589e33">
+    </UnitTestResult>
+    <UnitTestResult executionId="d8df9c49-2e8c-4886-916c-317261c0b2d3" testId="92b62c94-1ecc-1e76-746d-6449e4bb7557" testName="NumericOutput1" computerName="34106C00" duration="00:00:00.0017515" startTime="2011-06-14T18:24:17.8145028-07:00" endTime="2011-06-14T18:24:17.8205034-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d8df9c49-2e8c-4886-916c-317261c0b2d3">
+    </UnitTestResult>
+    <UnitTestResult executionId="290ad9da-d2a1-41e9-a91c-298e65567020" testId="9ba00f5a-a88f-ac70-b3de-d3eff9f6fe73" testName="ThreeInputNAnd" computerName="34106C00" duration="00:00:00.0008637" startTime="2011-06-14T18:24:17.8225036-07:00" endTime="2011-06-14T18:24:17.8275041-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="290ad9da-d2a1-41e9-a91c-298e65567020">
+    </UnitTestResult>
+    <UnitTestResult executionId="3ae6a607-9d3a-4d29-b7d7-d5777f142b2e" testId="a09f0a1f-ad09-5c71-dc13-0b38847ba32d" testName="Or" computerName="34106C00" duration="00:00:00.0013641" startTime="2011-06-14T18:24:17.8305044-07:00" endTime="2011-06-14T18:24:17.8355049-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3ae6a607-9d3a-4d29-b7d7-d5777f142b2e">
+    </UnitTestResult>
+    <UnitTestResult executionId="0861c26d-52bd-42ba-986a-3608aed2e245" testId="a3354c9d-8c9e-a97b-96c0-2fd38c6f2a6c" testName="OscillationCircuit2" computerName="34106C00" duration="00:00:10.0015834" startTime="2011-06-14T18:24:17.8385052-07:00" endTime="2011-06-14T18:24:27.8435056-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0861c26d-52bd-42ba-986a-3608aed2e245">
+    </UnitTestResult>
+    <UnitTestResult executionId="8c093f32-8031-4abb-a2ce-44c02004c948" testId="a61c9322-4931-ab5c-5189-49aae7d69782" testName="OscillationCircuit1" computerName="34106C00" duration="00:00:10.0021228" startTime="2011-06-14T18:24:27.8465059-07:00" endTime="2011-06-14T18:24:37.8535065-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8c093f32-8031-4abb-a2ce-44c02004c948">
+    </UnitTestResult>
+    <UnitTestResult executionId="1e3e3fc6-bbd1-4e1e-aa71-fe5fc118f738" testId="a61cb9fe-3d2e-2c30-22db-9e8fb465d87b" testName="ThruCircuit1" computerName="34106C00" duration="00:00:00.0903032" startTime="2011-06-14T18:24:37.8565068-07:00" endTime="2011-06-14T18:24:37.9515163-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1e3e3fc6-bbd1-4e1e-aa71-fe5fc118f738">
+    </UnitTestResult>
+    <UnitTestResult executionId="abf03665-7fd5-402e-a60b-7cfa91b3f5ba" testId="a9e56407-9d8a-a00f-6c09-1ddb000fdfb1" testName="CloneTest" computerName="34106C00" duration="00:00:00.0929099" startTime="2011-06-14T18:24:37.9565168-07:00" endTime="2011-06-14T18:24:38.0545266-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="abf03665-7fd5-402e-a60b-7cfa91b3f5ba">
+    </UnitTestResult>
+    <UnitTestResult executionId="a4b9805e-5df4-4667-81f9-784fdf9551a4" testId="b5d17332-7a60-d6bd-097e-a83d92c12fa3" testName="Nor" computerName="34106C00" duration="00:00:00.0124099" startTime="2011-06-14T18:24:38.0645276-07:00" endTime="2011-06-14T18:24:38.0915303-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a4b9805e-5df4-4667-81f9-784fdf9551a4">
+    </UnitTestResult>
+    <UnitTestResult executionId="1b7b2bf9-4ea8-47fc-a70e-63f7e698d094" testId="ba3ec742-86ea-7d00-e30e-fd13a26c04fa" testName="Xor" computerName="34106C00" duration="00:00:00.0011782" startTime="2011-06-14T18:24:38.1425354-07:00" endTime="2011-06-14T18:24:38.1525364-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1b7b2bf9-4ea8-47fc-a70e-63f7e698d094">
+    </UnitTestResult>
+    <UnitTestResult executionId="d0e7702d-bc8f-43ac-ad46-57c40dfc4241" testId="bd9dccc8-4986-be2a-a5f7-e28b1c11b07f" testName="DefaultTTGenerator" computerName="34106C00" duration="00:00:00.1168222" startTime="2011-06-14T18:24:38.1675379-07:00" endTime="2011-06-14T18:24:38.2915503-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d0e7702d-bc8f-43ac-ad46-57c40dfc4241">
+    </UnitTestResult>
+    <UnitTestResult executionId="36d62580-0f53-4d54-a36c-f6932dd52fc0" testId="c0a6b371-51b0-676b-e40d-733c9765f852" testName="ThreeInputNOr" computerName="34106C00" duration="00:00:00.0008429" startTime="2011-06-14T18:24:38.2935505-07:00" endTime="2011-06-14T18:24:38.2975509-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="36d62580-0f53-4d54-a36c-f6932dd52fc0">
+    </UnitTestResult>
+    <UnitTestResult executionId="be1d7f89-85f8-4204-84ef-9ec027221959" testId="c0ac0706-9832-dfd4-d39c-1d96ad96da0b" testName="ThreeInputOr" computerName="34106C00" duration="00:00:00.0012854" startTime="2011-06-14T18:24:38.2995511-07:00" endTime="2011-06-14T18:24:38.3055517-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="be1d7f89-85f8-4204-84ef-9ec027221959">
+    </UnitTestResult>
+    <UnitTestResult executionId="18dd865e-c84e-456d-af43-cd9c626f3787" testId="c5cbbcc5-63cd-d435-5249-4550cc8eb98a" testName="ToggleStateTTTest" computerName="34106C00" duration="00:00:00.0016930" startTime="2011-06-14T18:24:38.3085520-07:00" endTime="2011-06-14T18:24:38.3145526-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="18dd865e-c84e-456d-af43-cd9c626f3787">
+    </UnitTestResult>
+    <UnitTestResult executionId="e456c599-be4e-4792-a2ad-db3916bf3346" testId="cec0f403-05a9-89a2-a8a5-da3b816f9a7b" testName="Buffer" computerName="34106C00" duration="00:00:00.0004243" startTime="2011-06-14T18:24:38.3175529-07:00" endTime="2011-06-14T18:24:38.3215533-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e456c599-be4e-4792-a2ad-db3916bf3346">
+    </UnitTestResult>
+    <UnitTestResult executionId="6647bcfc-4b2b-4b13-ab2b-5759208d45a1" testId="e6d5a655-6197-d561-f57c-b35b1b8a7ddf" testName="SimpleStateTTTest" computerName="34106C00" duration="00:00:00.0017710" startTime="2011-06-14T18:24:38.3245536-07:00" endTime="2011-06-14T18:24:38.3295541-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6647bcfc-4b2b-4b13-ab2b-5759208d45a1">
+    </UnitTestResult>
+    <UnitTestResult executionId="03692797-9dab-4960-8721-61d53497a7f9" testId="ea3bed15-8ee3-d2b7-56af-4080606ebadf" testName="BoolLinesTTTest" computerName="34106C00" duration="00:00:00.0001540" startTime="2011-06-14T18:24:38.3395551-07:00" endTime="2011-06-14T18:24:38.3435555-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="03692797-9dab-4960-8721-61d53497a7f9">
+    </UnitTestResult>
+    <UnitTestResult executionId="5947fd72-7cd2-43c8-bdab-b0e47e305ebc" testId="ee04d189-c7bc-1b49-5c71-188fbcf86fb1" testName="NumericInput" computerName="34106C00" duration="00:00:00.0024948" startTime="2011-06-14T18:24:38.3455557-07:00" endTime="2011-06-14T18:24:38.3515563-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5947fd72-7cd2-43c8-bdab-b0e47e305ebc">
+    </UnitTestResult>
+    <UnitTestResult executionId="1ee320f1-75fe-464f-b635-5bcd21560882" testId="fdc200b8-d9ce-47c6-2f11-c43a5890d498" testName="CloneTT" computerName="34106C00" duration="00:00:00.0008682" startTime="2011-06-14T18:24:38.3535565-07:00" endTime="2011-06-14T18:24:38.3575569-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1ee320f1-75fe-464f-b635-5bcd21560882">
+    </UnitTestResult>
+  </Results>
+</TestRun>

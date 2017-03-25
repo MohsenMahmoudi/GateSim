@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/tp1/!svn/ver/249/steve/GateSim/GatesTest
+END
+ICTest.cs
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/tp1/!svn/ver/249/steve/GateSim/GatesTest/ICTest.cs
+END
+IOGatesTest.cs
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/tp1/!svn/ver/169/steve/GateSim/GatesTest/IOGatesTest.cs
+END
+GatesTest.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/tp1/!svn/ver/198/steve/GateSim/GatesTest/GatesTest.csproj
+END
+TruthTableTest.cs
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/tp1/!svn/ver/166/steve/GateSim/GatesTest/TruthTableTest.cs
+END
+CircuitTest.cs
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/tp1/!svn/ver/249/steve/GateSim/GatesTest/CircuitTest.cs
+END
+BasicGatesTest.cs
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/tp1/!svn/ver/149/steve/GateSim/GatesTest/BasicGatesTest.cs
+END

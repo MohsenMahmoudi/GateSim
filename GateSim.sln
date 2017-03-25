@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{954AF93D-C259-451D-9E2F-EC93D3179D3F}"
+	ProjectSection(SolutionItems) = preProject
+		GateSim.vsmdi = GateSim.vsmdi
+		LocalTestRun.testrunconfig = LocalTestRun.testrunconfig
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gates", "Gates\Gates.csproj", "{15BBDB68-90B9-4B7F-A956-D8578B797C16}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleTester", "ConsoleTester\ConsoleTester.csproj", "{9B3D7D65-70B8-4DA8-88B2-E62BCD72F421}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GatesWpf", "GatesWpf\GatesWpf.csproj", "{12E9A354-9CAD-4737-855A-CD3D69A74982}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GatesTest", "GatesTest\GatesTest.csproj", "{DD57763D-70FF-40A0-A4AF-925263C88894}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "GateSimSetup", "GateSimSetup\GateSimSetup.vdproj", "{1534044B-E812-4A35-8B77-13A356BC1F74}"
+EndProject
+Global
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = GateSim.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{15BBDB68-90B9-4B7F-A956-D8578B797C16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15BBDB68-90B9-4B7F-A956-D8578B797C16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15BBDB68-90B9-4B7F-A956-D8578B797C16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15BBDB68-90B9-4B7F-A956-D8578B797C16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B3D7D65-70B8-4DA8-88B2-E62BCD72F421}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B3D7D65-70B8-4DA8-88B2-E62BCD72F421}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B3D7D65-70B8-4DA8-88B2-E62BCD72F421}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B3D7D65-70B8-4DA8-88B2-E62BCD72F421}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12E9A354-9CAD-4737-855A-CD3D69A74982}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12E9A354-9CAD-4737-855A-CD3D69A74982}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12E9A354-9CAD-4737-855A-CD3D69A74982}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12E9A354-9CAD-4737-855A-CD3D69A74982}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD57763D-70FF-40A0-A4AF-925263C88894}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD57763D-70FF-40A0-A4AF-925263C88894}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD57763D-70FF-40A0-A4AF-925263C88894}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD57763D-70FF-40A0-A4AF-925263C88894}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1534044B-E812-4A35-8B77-13A356BC1F74}.Debug|Any CPU.ActiveCfg = Debug
+		{1534044B-E812-4A35-8B77-13A356BC1F74}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

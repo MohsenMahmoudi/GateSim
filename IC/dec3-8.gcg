@@ -1,0 +1,414 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CircuitGroup Version="1.2">
+  <Circuit Name="2*4DEC">
+    <Gates>
+      <Gate Type="UserInput" Name="a" ID="1">
+        <Point X="335" Y="253" Angle="0" />
+      </Gate>
+      <Gate Type="UserInput" Name="b" ID="2">
+        <Point X="335" Y="319" Angle="0" />
+      </Gate>
+      <Gate Type="UserOutput" Name="w" ID="3">
+        <Point X="792" Y="208" Angle="0" />
+      </Gate>
+      <Gate Type="UserOutput" Name="x" ID="4">
+        <Point X="794" Y="274" Angle="0" />
+      </Gate>
+      <Gate Type="UserOutput" Name="y" ID="5">
+        <Point X="794" Y="346" Angle="0" />
+      </Gate>
+      <Gate Type="UserOutput" Name="z" ID="6">
+        <Point X="795" Y="420" Angle="0" />
+      </Gate>
+      <Gate Type="And" Name="And" ID="7" NumInputs="2">
+        <Point X="636" Y="202" Angle="0" />
+      </Gate>
+      <Gate Type="And" Name="And" ID="8" NumInputs="2">
+        <Point X="717" Y="209" Angle="0" />
+      </Gate>
+      <Gate Type="UserInput" Name="EN" ID="9">
+        <Point X="334" Y="393" Angle="0" />
+      </Gate>
+      <Gate Type="Not" Name="Not" ID="10">
+        <Point X="480" Y="224" Angle="0" />
+      </Gate>
+      <Gate Type="Not" Name="Not" ID="11">
+        <Point X="481" Y="262" Angle="0" />
+      </Gate>
+      <Gate Type="And" Name="And" ID="12" NumInputs="2">
+        <Point X="724" Y="275" Angle="0" />
+      </Gate>
+      <Gate Type="And" Name="And" ID="13" NumInputs="2">
+        <Point X="636" Y="270" Angle="0" />
+      </Gate>
+      <Gate Type="And" Name="And" ID="14" NumInputs="2">
+        <Point X="732" Y="344" Angle="0" />
+      </Gate>
+      <Gate Type="And" Name="And" ID="15" NumInputs="2">
+        <Point X="640" Y="334" Angle="0" />
+      </Gate>
+      <Gate Type="And" Name="And" ID="16" NumInputs="2">
+        <Point X="725" Y="422" Angle="0" />
+      </Gate>
+      <Gate Type="And" Name="And" ID="17" NumInputs="2">
+        <Point X="640" Y="416" Angle="0" />
+      </Gate>
+    </Gates>
+    <Wires>
+      <Wire>
+        <From ID="8" Port="0" />
+        <To ID="3" Port="0" />
+      </Wire>
+      <Wire>
+        <From ID="12" Port="0" />
+        <To ID="4" Port="0" />
+      </Wire>
+      <Wire>
+        <From ID="14" Port="0" />
+        <To ID="5" Port="0" />
+      </Wire>
+      <Wire>
+        <From ID="16" Port="0" />
+        <To ID="6" Port="0" />
+      </Wire>
+      <Wire>
+        <From ID="11" Port="0" />
+        <To ID="7" Port="0" />
+      </Wire>
+      <Wire>
+        <From ID="10" Port="0" />
+        <To ID="7" Port="1" />
+      </Wire>
+      <Wire>
+        <From ID="9" Port="0" />
+        <To ID="8" Port="0" />
+      </Wire>
+      <Wire>
+        <From ID="7" Port="0" />
+        <To ID="8" Port="1" />
+      </Wire>
+      <Wire>
+        <From ID="1" Port="0" />
+        <To ID="10" Port="0" />
+      </Wire>
+      <Wire>
+        <From ID="2" Port="0" />
+        <To ID="11" Port="0" />
+      </Wire>
+      <Wire>
+        <From ID="9" Port="0" />
+        <To ID="12" Port="0" />
+      </Wire>
+      <Wire>
+        <From ID="13" Port="0" />
+        <To ID="12" Port="1" />
+      </Wire>
+      <Wire>
+        <From ID="2" Port="0" />
+        <To ID="13" Port="0" />
+      </Wire>
+      <Wire>
+        <From ID="10" Port="0" />
+        <To ID="13" Port="1" />
+      </Wire>
+      <Wire>
+        <From ID="9" Port="0" />
+        <To ID="14" Port="0" />
+      </Wire>
+      <Wire>
+        <From ID="15" Port="0" />
+        <To ID="14" Port="1" />
+      </Wire>
+      <Wire>
+        <From ID="1" Port="0" />
+        <To ID="15" Port="0" />
+      </Wire>
+      <Wire>
+        <From ID="11" Port="0" />
+        <To ID="15" Port="1" />
+      </Wire>
+      <Wire>
+        <From ID="9" Port="0" />
+        <To ID="16" Port="0" />
+      </Wire>
+      <Wire>
+        <From ID="17" Port="0" />
+        <To ID="16" Port="1" />
+      </Wire>
+      <Wire>
+        <From ID="2" Port="0" />
+        <To ID="17" Port="0" />
+      </Wire>
+      <Wire>
+        <From ID="1" Port="0" />
+        <To ID="17" Port="1" />
+      </Wire>
+    </Wires>
+  </Circuit>
+  <Circuit Name="3*8DEC">
+    <Gates>
+      <Gate Type="IC" Name="2*4DEC" ID="1">
+        <Point X="734" Y="309" Angle="0" />
+      </Gate>
+      <Gate Type="IC" Name="2*4DEC" ID="2">
+        <Point X="736" Y="416" Angle="0" />
+      </Gate>
+      <Gate Type="UserInput" Name="a" ID="3">
+        <Point X="448" Y="352" Angle="0" />
+      </Gate>
+      <Gate Type="UserInput" Name="b" ID="4">
+        <Point X="448" Y="416" Angle="0" />
+      </Gate>
+      <Gate Type="UserInput" Name="c" ID="5">
+        <Point X="448" Y="480" Angle="0" />
+      </Gate>
+      <Gate Type="UserInput" Name="EN" ID="6">
+        <Point X="452" Y="560" Angle="0" />
+      </Gate>
+      <Gate Type="Not" Name="Not" ID="7">
+        <Point X="564" Y="468" Angle="0" />
+      </Gate>
+      <Gate Type="UserOutput" Name="y0" ID="8">
+        <Point X="901" Y="158" Angle="0" />
+      </Gate>
+      <Gate Type="UserOutput" Name="y1" ID="9">
+        <Point X="901" Y="222" Angle="0" />
+      </Gate>
+      <Gate Type="UserOutput" Name="y2" ID="10">
+        <Point X="901" Y="286" Angle="0" />
+      </Gate>
+      <Gate Type="UserOutput" Name="y3" ID="11">
+        <Point X="901" Y="350" Angle="0" />
+      </Gate>
+      <Gate Type="UserOutput" Name="y4" ID="12">
+        <Point X="903" Y="404" Angle="0" />
+      </Gate>
+      <Gate Type="UserOutput" Name="y5" ID="13">
+        <Point X="903" Y="468" Angle="0" />
+      </Gate>
+      <Gate Type="UserOutput" Name="y6" ID="14">
+        <Point X="903" Y="532" Angle="0" />
+      </Gate>
+      <Gate Type="UserOutput" Name="y7" ID="15">
+        <Point X="903" Y="596" Angle="0" />
+      </Gate>
+      <Gate Type="And" Name="And" ID="16" NumInputs="2">
+        <Point X="649" Y="543" Angle="0" />
+      </Gate>
+      <Gate Type="And" Name="And" ID="17" NumInputs="2">
+        <Point X="640" Y="480" Angle="0" />
+      </Gate>
+    </Gates>
+    <Wires>
+      <Wire>
+        <From ID="4" Port="0" />
+        <To ID="1" Port="0" />
+      </Wire>
+      <Wire>
+        <From ID="5" Port="0" />
+        <To ID="1" Port="1" />
+      </Wire>
+      <Wire>
+        <From ID="17" Port="0" />
+        <To ID="1" Port="2" />
+      </Wire>
+      <Wire>
+        <From ID="4" Port="0" />
+        <To ID="2" Port="0" />
+      </Wire>
+      <Wire>
+        <From ID="5" Port="0" />
+        <To ID="2" Port="1" />
+      </Wire>
+      <Wire>
+        <From ID="16" Port="0" />
+        <To ID="2" Port="2" />
+      </Wire>
+      <Wire>
+        <From ID="3" Port="0" />
+        <To ID="7" Port="0" />
+      </Wire>
+      <Wire>
+        <From ID="1" Port="0" />
+        <To ID="8" Port="0" />
+      </Wire>
+      <Wire>
+        <From ID="1" Port="1" />
+        <To ID="9" Port="0" />
+      </Wire>
+      <Wire>
+        <From ID="1" Port="2" />
+        <To ID="10" Port="0" />
+      </Wire>
+      <Wire>
+        <From ID="1" Port="3" />
+        <To ID="11" Port="0" />
+      </Wire>
+      <Wire>
+        <From ID="2" Port="0" />
+        <To ID="12" Port="0" />
+      </Wire>
+      <Wire>
+        <From ID="2" Port="1" />
+        <To ID="13" Port="0" />
+      </Wire>
+      <Wire>
+        <From ID="2" Port="2" />
+        <To ID="14" Port="0" />
+      </Wire>
+      <Wire>
+        <From ID="2" Port="3" />
+        <To ID="15" Port="0" />
+      </Wire>
+      <Wire>
+        <From ID="6" Port="0" />
+        <To ID="16" Port="0" />
+      </Wire>
+      <Wire>
+        <From ID="3" Port="0" />
+        <To ID="16" Port="1" />
+      </Wire>
+      <Wire>
+        <From ID="6" Port="0" />
+        <To ID="17" Port="0" />
+      </Wire>
+      <Wire>
+        <From ID="7" Port="0" />
+        <To ID="17" Port="1" />
+      </Wire>
+    </Wires>
+  </Circuit>
+  <Circuit>
+    <Gates>
+      <Gate Type="IC" Name="2*4DEC" ID="1">
+        <Point X="734" Y="309" Angle="0" />
+      </Gate>
+      <Gate Type="IC" Name="2*4DEC" ID="2">
+        <Point X="736" Y="416" Angle="0" />
+      </Gate>
+      <Gate Type="UserInput" Name="a" ID="3">
+        <Point X="448" Y="352" Angle="0" />
+      </Gate>
+      <Gate Type="UserInput" Name="b" ID="4">
+        <Point X="448" Y="416" Angle="0" />
+      </Gate>
+      <Gate Type="UserInput" Name="c" ID="5">
+        <Point X="448" Y="480" Angle="0" />
+      </Gate>
+      <Gate Type="UserInput" Name="EN" ID="6">
+        <Point X="452" Y="560" Angle="0" />
+      </Gate>
+      <Gate Type="Not" Name="Not" ID="7">
+        <Point X="564" Y="468" Angle="0" />
+      </Gate>
+      <Gate Type="UserOutput" Name="y0" ID="8">
+        <Point X="901" Y="158" Angle="0" />
+      </Gate>
+      <Gate Type="UserOutput" Name="y1" ID="9">
+        <Point X="901" Y="222" Angle="0" />
+      </Gate>
+      <Gate Type="UserOutput" Name="y2" ID="10">
+        <Point X="901" Y="286" Angle="0" />
+      </Gate>
+      <Gate Type="UserOutput" Name="y3" ID="11">
+        <Point X="901" Y="350" Angle="0" />
+      </Gate>
+      <Gate Type="UserOutput" Name="y4" ID="12">
+        <Point X="903" Y="404" Angle="0" />
+      </Gate>
+      <Gate Type="UserOutput" Name="y5" ID="13">
+        <Point X="903" Y="468" Angle="0" />
+      </Gate>
+      <Gate Type="UserOutput" Name="y6" ID="14">
+        <Point X="903" Y="532" Angle="0" />
+      </Gate>
+      <Gate Type="UserOutput" Name="y7" ID="15">
+        <Point X="903" Y="596" Angle="0" />
+      </Gate>
+      <Gate Type="And" Name="And" ID="16" NumInputs="2">
+        <Point X="649" Y="543" Angle="0" />
+      </Gate>
+      <Gate Type="And" Name="And" ID="17" NumInputs="2">
+        <Point X="640" Y="480" Angle="0" />
+      </Gate>
+    </Gates>
+    <Wires>
+      <Wire>
+        <From ID="4" Port="0" />
+        <To ID="1" Port="0" />
+      </Wire>
+      <Wire>
+        <From ID="5" Port="0" />
+        <To ID="1" Port="1" />
+      </Wire>
+      <Wire>
+        <From ID="17" Port="0" />
+        <To ID="1" Port="2" />
+      </Wire>
+      <Wire>
+        <From ID="4" Port="0" />
+        <To ID="2" Port="0" />
+      </Wire>
+      <Wire>
+        <From ID="5" Port="0" />
+        <To ID="2" Port="1" />
+      </Wire>
+      <Wire>
+        <From ID="16" Port="0" />
+        <To ID="2" Port="2" />
+      </Wire>
+      <Wire>
+        <From ID="3" Port="0" />
+        <To ID="7" Port="0" />
+      </Wire>
+      <Wire>
+        <From ID="1" Port="0" />
+        <To ID="8" Port="0" />
+      </Wire>
+      <Wire>
+        <From ID="1" Port="1" />
+        <To ID="9" Port="0" />
+      </Wire>
+      <Wire>
+        <From ID="1" Port="2" />
+        <To ID="10" Port="0" />
+      </Wire>
+      <Wire>
+        <From ID="1" Port="3" />
+        <To ID="11" Port="0" />
+      </Wire>
+      <Wire>
+        <From ID="2" Port="0" />
+        <To ID="12" Port="0" />
+      </Wire>
+      <Wire>
+        <From ID="2" Port="1" />
+        <To ID="13" Port="0" />
+      </Wire>
+      <Wire>
+        <From ID="2" Port="2" />
+        <To ID="14" Port="0" />
+      </Wire>
+      <Wire>
+        <From ID="2" Port="3" />
+        <To ID="15" Port="0" />
+      </Wire>
+      <Wire>
+        <From ID="6" Port="0" />
+        <To ID="16" Port="0" />
+      </Wire>
+      <Wire>
+        <From ID="3" Port="0" />
+        <To ID="16" Port="1" />
+      </Wire>
+      <Wire>
+        <From ID="6" Port="0" />
+        <To ID="17" Port="0" />
+      </Wire>
+      <Wire>
+        <From ID="7" Port="0" />
+        <To ID="17" Port="1" />
+      </Wire>
+    </Wires>
+  </Circuit>
+</CircuitGroup>

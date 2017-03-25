@@ -1,0 +1,170 @@
+﻿<UserControl x:Class="GatesWpf.GateSelector"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:gates="clr-namespace:GatesWpf.UIGates"
+             xmlns:dragDrop="clr-namespace:GatesWpf.DragDrop"
+             xmlns:sys="clr-namespace:System;assembly=mscorlib"
+             xmlns:local="clr-namespace:GatesWpf"
+    >
+    <UserControl.Resources>
+        <local:ExpanderHeightConverter x:Key="expanderHeightConverter" />
+        <dragDrop:GateDragDropAdorner x:Key="gateAdorner"/>
+        <Style TargetType="{x:Type Expander}">
+            <Setter Property="Height">
+                <Setter.Value>
+                    <MultiBinding Converter="{StaticResource expanderHeightConverter}">
+                        <Binding Path="Content.ActualHeight" RelativeSource="{RelativeSource Self}" />
+                        <Binding Path="Tag" RelativeSource="{RelativeSource Self}" />
+                    </MultiBinding>
+                    
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Tag">
+                <Setter.Value>
+                    <sys:Double>1</sys:Double>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Background">
+                <Setter.Value>
+                    <LinearGradientBrush MappingMode="Absolute" StartPoint="55,0" EndPoint="55,22">
+                        <GradientStop Color="White" Offset="0.0" />
+                        <GradientStop Color="DarkGray" Offset="0.9" />
+                        <GradientStop Color="White" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsExpanded" Value="True">
+                    <Trigger.EnterActions>
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <DoubleAnimation 
+                                                 Storyboard.TargetProperty="Tag"
+                                                 From="0"
+                                                 To="1"
+                                                 Duration="0:0:0.25" />
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </Trigger.EnterActions>
+                    
+                    <Trigger.ExitActions>
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <DoubleAnimation 
+                                                 Storyboard.TargetProperty="Tag"
+                                                 From="1"
+                                                 To="0"
+                                                 Duration="0:0:0.25" />
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </Trigger.ExitActions>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </UserControl.Resources>
+    <ScrollViewer Grid.Row="1" Name="svGates">
+        <StackPanel Orientation="Vertical">
+            <Expander Header="Basic Gates" IsExpanded="True">
+                <StackPanel Orientation="Vertical">
+                    <gates:Not x:Name="tbNot" VerticalAlignment="Top"
+                   dragDrop:DragDropHelper.IsDragSource="true" 
+                   dragDrop:DragDropHelper.DragDropControl="{StaticResource gateAdorner}"
+                   dragDrop:DragDropHelper.DropTarget="gateCanvas"
+                   dragDrop:DragDropHelper.AdornerLayer="adornerLayer" />
+
+                    <gates:And x:Name="tbAnd" VerticalAlignment="Top"
+                   dragDrop:DragDropHelper.IsDragSource="true" 
+                   dragDrop:DragDropHelper.DragDropControl="{StaticResource gateAdorner}"
+                   dragDrop:DragDropHelper.DropTarget="gateCanvas"
+                   dragDrop:DragDropHelper.AdornerLayer="adornerLayer" />
+
+                    
+                    <gates:Or x:Name="tbOr" VerticalAlignment="Top"
+                   dragDrop:DragDropHelper.IsDragSource="true" 
+                   dragDrop:DragDropHelper.DragDropControl="{StaticResource gateAdorner}"
+                   dragDrop:DragDropHelper.DropTarget="gateCanvas"
+                   dragDrop:DragDropHelper.AdornerLayer="adornerLayer" />
+                    
+                    <gates:Buffer x:Name="tbBuffer" VerticalAlignment="Top"
+                   dragDrop:DragDropHelper.IsDragSource="true" 
+                   dragDrop:DragDropHelper.DragDropControl="{StaticResource gateAdorner}"
+                   dragDrop:DragDropHelper.DropTarget="gateCanvas"
+                   dragDrop:DragDropHelper.AdornerLayer="adornerLayer" />
+                </StackPanel>
+            </Expander>
+            <Expander Header="Compound Gates" IsExpanded="False">
+                    <StackPanel Orientation="Vertical">
+                    <gates:Nand x:Name="tbNand" VerticalAlignment="Top"
+                   dragDrop:DragDropHelper.IsDragSource="true" 
+                   dragDrop:DragDropHelper.DragDropControl="{StaticResource gateAdorner}"
+                   dragDrop:DragDropHelper.DropTarget="gateCanvas"
+                   dragDrop:DragDropHelper.AdornerLayer="adornerLayer" />
+
+                    <gates:Nor x:Name="tbNor" VerticalAlignment="Top"
+                   dragDrop:DragDropHelper.IsDragSource="true" 
+                   dragDrop:DragDropHelper.DragDropControl="{StaticResource gateAdorner}"
+                   dragDrop:DragDropHelper.DropTarget="gateCanvas"
+                   dragDrop:DragDropHelper.AdornerLayer="adornerLayer" />
+                    
+                    <gates:Xor x:Name="tbXor" VerticalAlignment="Top"
+                   dragDrop:DragDropHelper.IsDragSource="true" 
+                   dragDrop:DragDropHelper.DragDropControl="{StaticResource gateAdorner}"
+                   dragDrop:DragDropHelper.DropTarget="gateCanvas"
+                   dragDrop:DragDropHelper.AdornerLayer="adornerLayer" />
+                    
+                    <gates:Xnor x:Name="tbXnor" VerticalAlignment="Top"
+                   dragDrop:DragDropHelper.IsDragSource="true" 
+                   dragDrop:DragDropHelper.DragDropControl="{StaticResource gateAdorner}"
+                   dragDrop:DragDropHelper.DropTarget="gateCanvas"
+                   dragDrop:DragDropHelper.AdornerLayer="adornerLayer" />
+                </StackPanel>
+            </Expander>
+            <Expander Header="I/O Gates" IsExpanded="True">
+                <StackPanel Orientation="Vertical">
+                    <gates:UserInput x:Name="tbUserInput" VerticalAlignment="Top"
+                   dragDrop:DragDropHelper.IsDragSource="true" 
+                   dragDrop:DragDropHelper.DragDropControl="{StaticResource gateAdorner}"
+                   dragDrop:DragDropHelper.DropTarget="gateCanvas"
+                   dragDrop:DragDropHelper.AdornerLayer="adornerLayer" />
+
+
+                    <gates:UserOutput x:Name="tbUserOutput" VerticalAlignment="Top"
+                   dragDrop:DragDropHelper.IsDragSource="true" 
+                   dragDrop:DragDropHelper.DragDropControl="{StaticResource gateAdorner}"
+                   dragDrop:DragDropHelper.DropTarget="gateCanvas"
+                   dragDrop:DragDropHelper.AdornerLayer="adornerLayer" />
+
+                    <gates:DefaultNumericOutput x:Name="tbNumericOutput" VerticalAlignment="Top"
+                   dragDrop:DragDropHelper.IsDragSource="true" 
+                   dragDrop:DragDropHelper.DragDropControl="{StaticResource gateAdorner}"
+                   dragDrop:DragDropHelper.DropTarget="gateCanvas"
+                   dragDrop:DragDropHelper.AdornerLayer="adornerLayer" />
+
+                    <gates:DefaultNumericInput x:Name="tbNumericInput" VerticalAlignment="Top"
+                   dragDrop:DragDropHelper.IsDragSource="true" 
+                   dragDrop:DragDropHelper.DragDropControl="{StaticResource gateAdorner}"
+                   dragDrop:DragDropHelper.DropTarget="gateCanvas"
+                   dragDrop:DragDropHelper.AdornerLayer="adornerLayer" />
+                    
+                    <gates:Clock x:Name="tbClock" VerticalAlignment="Top"
+                   dragDrop:DragDropHelper.IsDragSource="true" 
+                   dragDrop:DragDropHelper.DragDropControl="{StaticResource gateAdorner}"
+                   dragDrop:DragDropHelper.DropTarget="gateCanvas"
+                   dragDrop:DragDropHelper.AdornerLayer="adornerLayer" />
+                    
+                    <gates:Comment x:Name="tbComment" VerticalAlignment="Top"
+                   dragDrop:DragDropHelper.IsDragSource="true" 
+                   dragDrop:DragDropHelper.DragDropControl="{StaticResource gateAdorner}"
+                   dragDrop:DragDropHelper.DropTarget="gateCanvas"
+                   dragDrop:DragDropHelper.AdornerLayer="adornerLayer" />
+                </StackPanel>
+
+            </Expander>
+
+            <Expander Header="User Gates" Name="expUserGates">
+                <StackPanel Orientation="Vertical" Name="spGates">
+                </StackPanel>
+            </Expander>
+        </StackPanel>
+    </ScrollViewer>
+</UserControl>

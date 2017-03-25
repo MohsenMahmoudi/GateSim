@@ -1,0 +1,10 @@
+﻿<UserControl x:Class="GatesWpf.Charting.ChartLine"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Canvas Margin="0,5,5,5">
+        
+        <Path Name="pLine" StrokeThickness="1" Stroke="Blue"  />
+        <Path Name="dashedLine" StrokeThickness="1" Stroke="Gray" StrokeDashArray="1,1" />
+    </Canvas>
+    
+</UserControl>

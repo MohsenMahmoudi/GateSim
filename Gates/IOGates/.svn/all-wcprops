@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/tp1/!svn/ver/249/steve/GateSim/Gates/IOGates
+END
+Clock.cs
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/tp1/!svn/ver/374/steve/GateSim/Gates/IOGates/Clock.cs
+END
+Comment.cs
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/tp1/!svn/ver/374/steve/GateSim/Gates/IOGates/Comment.cs
+END
+NumericInput.cs
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/tp1/!svn/ver/374/steve/GateSim/Gates/IOGates/NumericInput.cs
+END
+NumericOutput.cs
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/tp1/!svn/ver/374/steve/GateSim/Gates/IOGates/NumericOutput.cs
+END
+AbstractNumeric.cs
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/tp1/!svn/ver/374/steve/GateSim/Gates/IOGates/AbstractNumeric.cs
+END
+UserIO.cs
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/tp1/!svn/ver/249/steve/GateSim/Gates/IOGates/UserIO.cs
+END

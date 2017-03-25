@@ -1,0 +1,21 @@
+﻿TODO:
+
+hide/show ic
+* moving gates left and top of 0,0
+* numeric gates explode into input/output gates
+* (^ and vice versa)
+* autoconnect when terminals dropped near each other
+* way to specify the regions for ic (e.g. top, left, etc)
+optimizer (truth table)
+* override rather than insert as default text mode in numeric
+* ctrl+wheel to zoom, wheel alone should vertical scroll
+* ctrl+wheel should zoom relative to mouse position on canvas, not center.
+* label for userinput/useroutput that appears on gate at all times single letter IDs on useri/o, and on ICs
+* ability to select a gate and fade out all wires/gates that don't lead up to that gate (recursively back to input)
+?? numeric i/o tests
+* truth table "gate" user entry
+
+utility gates:
+mux/demux
+jk flip/flop
+

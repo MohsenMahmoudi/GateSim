@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/tp1/!svn/ver/249/steve/GateSim/GatesWpf/UndoRedo
+END
+UndoManager.cs
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/tp1/!svn/ver/249/steve/GateSim/GatesWpf/UndoRedo/UndoManager.cs
+END
+IUndoable.cs
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/tp1/!svn/ver/374/steve/GateSim/GatesWpf/UndoRedo/IUndoable.cs
+END
+Transaction.cs
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/tp1/!svn/ver/374/steve/GateSim/GatesWpf/UndoRedo/Transaction.cs
+END
+GateUndos.cs
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/tp1/!svn/ver/374/steve/GateSim/GatesWpf/UndoRedo/GateUndos.cs
+END

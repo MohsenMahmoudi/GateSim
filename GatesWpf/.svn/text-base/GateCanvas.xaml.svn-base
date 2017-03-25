@@ -1,0 +1,30 @@
+﻿<UserControl x:Class="GatesWpf.GateCanvas"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:GatesWpf"
+    >
+    <ScrollViewer Name="GCScroller"   VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" SizeChanged="GCScroller_SizeChanged" LayoutUpdated="GCScroller_LayoutUpdated" ScrollChanged="GCScroller_ScrollChanged">
+        <Canvas Name="GC" MouseDown="GateCanvas_MouseDown" MouseUp="GateCanvas_MouseUp" MouseMove="GateCanvas_MouseMove">
+            <Canvas.Background>
+                <!-- see http://mark-dot-net.blogspot.com/2007/06/creating-hatched-patterned-brush-in-wpf.html -->
+                <VisualBrush 
+      TileMode="Tile" Viewport="0,0,32,32" 
+      ViewportUnits="Absolute" Viewbox="0,0,32,32"    
+      ViewboxUnits="Absolute">
+                    <VisualBrush.Visual>
+                        <Canvas>
+                            <Rectangle Fill="LightGray" Width="32" Height="32" />
+                            <Path Stroke="DarkGray" Data="M 0 0 l 0 32" />
+                            <Path Stroke="DarkGray" Data="M 0 32 l 32 0" />
+                        </Canvas>
+                    </VisualBrush.Visual>
+                </VisualBrush>
+
+
+            </Canvas.Background>
+            <Rectangle Name="dragSelect" Stroke="Blue" StrokeThickness="1" HorizontalAlignment="Left" Margin="0,0,0,0" Visibility="Hidden" />
+            <local:Wire x:Name="dragWire" />
+        </Canvas>
+    </ScrollViewer>
+
+</UserControl>
